@@ -295,9 +295,10 @@ body {
 .intro_exhibition {
   flex: 1; /* Chaque colonne prendra une part égale de l'espace disponible */
   line-height: 1.3;
- 
-  
-  
+}
+
+.intro_exhibition p {
+  font-size : 22px;
 }
 
 .texte_exhibition {
@@ -539,14 +540,12 @@ body {
 
 /* STYLES FOR CONTENT INSIDE SIDEBAR */
 h2 {
-  font-size: 24px;
+  font-size: 34px;
   margin-bottom: 0px;
 }
 
-p {
-  
-  margin-bottom: 10px;
-  
+.item-sidebar p {
+  margin-bottom: 10px; 
   font-size: 16px;
 }
 
