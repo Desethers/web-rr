@@ -503,54 +503,46 @@ body {
 
 /* CONTAINER FOR GALLERY ITEM */
 .container-gallery-item {
-  display: flex;
+  display: flex; /* Utilise flexbox pour aligner les colonnes */
   width: 100%;
   margin-top: 4rem;
-  
-  
 }
 
 /* COLUMN FOR ARTWORK */
 .artworks-column {
   width: 70%; 
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Garde la direction verticale pour l'image */
   justify-content: center; /* Centre l'image horizontalement */
   align-items: center; /* Centre l'image verticalement */
   padding-right: 2rem; /* Espace entre l'image et la colonne de texte */
-  
 }
 
+/* STYLES FOR ARTWORK IMAGE */
 .artworks-image {
   max-width: 100%;
   margin-bottom: 3rem;
   display: block;
- 
-
 }
 
 /* SIDEBAR FOR TEXT AND BUTTON */
 .item-sidebar {
-  width: 30%; /* 1/4 de la largeur */
-  right: 0;
-  margin-top: 40px;
-  padding: 0px;
-  height: 100%;
+  width: 30%; /* 30% de la largeur pour la colonne de texte */
+  margin-left: 2rem; /* Espace entre les colonnes */
+  padding: 0; /* Pas de padding */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex-wrap: nowrap;
-
 }
 
 /* STYLES FOR CONTENT INSIDE SIDEBAR */
 .item-sidebar h2 {
   font-size: 24px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .item-sidebar p {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-size: 16px;
 }
 
@@ -565,9 +557,8 @@ body {
   padding: 10px;
   border: 1px solid black;
   border-radius: 2px;
-  margin-top:2rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
-
 }
 
 .buy-button:hover {
