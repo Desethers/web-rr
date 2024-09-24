@@ -507,6 +507,7 @@ body {
   width: 100%;
   margin-top: 4rem;
   
+  
 }
 
 /* COLUMN FOR ARTWORK */
@@ -516,7 +517,7 @@ body {
   flex-direction: column;
   justify-content: center; /* Centre l'image horizontalement */
   align-items: center; /* Centre l'image verticalement */
-  padding-right: 4rem; /* Espace entre l'image et la colonne de texte */
+  padding-right: 2rem; /* Espace entre l'image et la colonne de texte */
   
 }
 
@@ -538,12 +539,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex-wrap: nowrap;
 
 }
 
 /* STYLES FOR CONTENT INSIDE SIDEBAR */
-h2 {
-  font-size: 28px;
+.item-sidebar h2 {
+  font-size: 24px;
   margin-bottom: 0px;
 }
 
