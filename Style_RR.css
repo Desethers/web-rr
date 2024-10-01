@@ -305,7 +305,7 @@ body {
   max-width: 80%;
   font-size: 20px;
   line-height: 1.3;
-  margin-top: 10rem;
+  margin-top: 7rem;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
@@ -326,6 +326,7 @@ body {
     column-gap: 0;
     box-sizing: border-box;
     font-size: 16px;
+    margin-top: 4rem;
   }
 
   /* Ajoute des sauts de ligne après chaque paragraphe sur mobile */
@@ -346,7 +347,8 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  margin-top: 2rem;
+  .imagefull img {
+  margin-top: 2rem;}  
 }  
 
 
@@ -387,6 +389,17 @@ body {
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .legende_bouton {
+    flex-direction: column; /* Aligne le texte et le bouton en colonne */
+    align-items: flex-start; /* Aligne le contenu à gauche */
+  }
+
+  .bouton_inquire {
+    width: 100%; /* Le bouton prend toute la largeur disponible */
+  }
+}
+
 
 
 .module_img_txt {
@@ -415,41 +428,48 @@ body {
   max-width: 50%; /* Optionnel, pour limiter la largeur du texte */
 }
 
+/* Styles spécifiques pour les écrans mobiles */
+@media (max-width: 768px) {
+  .module_img_txt {
+    flex-direction: column; /* Passe en colonne sur mobile */
+    gap: 4rem; /* Réduit l'espace entre l'image et le texte */
+    margin-top: 4rem; /* Ajuste la marge pour mobile */
+    align-items: center; /* Centre les éléments horizontalement */
+    max-width: 100%; /* Empêche le dépassement horizontal */
+  }
+
+  .module_img_txt .img_side {
+    width: 100%; /* L'image prend toute la largeur */
+    text-align: center; /* Centre le contenu de l'image */
+  }
+
+  .module_img_txt .quotes_exhibition {
+    max-width: 100%; /* Réduit la largeur du conteneur pour qu'il ne prenne pas toute la place */
+    text-align: center; /* Centre le texte */
+    margin: 0 auto; /* Centre horizontalement le conteneur de texte */
+    padding: 0 0px; /* Ajoute un padding pour ne pas coller aux bords */
+    
+    
+  }
+}
+
+
 .quotes {
-  font-size: 1.7rem;
+  font-size: 28px;
   line-height: 1.3;
   max-width: 400px;
   text-align: left; /* Alignement du texte à gauche */
   margin: 0 auto; /* Centre le conteneur de texte */
 }
 
-/* Styles pour les écrans mobiles */
 @media (max-width: 768px) {
-  .module_img_txt {
-    display: block; /* Passe les éléments en bloc pour les empiler verticalement */
-    gap: 0;
-  }
-
-  .module_img_txt .img_side {
-    width: 100%; /* L'image prend toute la largeur */
-  }
-
-  .module_img_txt .img_side img {
-    width: 100%; /* L'image prend 100% de la largeur du conteneur tout en conservant ses proportions */
-    height: auto; /* Assure que l'image garde ses proportions */
-  }
-
-  .module_img_txt .quotes_exhibition {
-    width: 100%; /* Le texte prend aussi toute la largeur */
-    margin-top: 20px; /* Espace entre l'image et le texte */
-  }
-
   .quotes {
-    max-width: 100%; /* Le texte s'adapte à la largeur disponible */
-    margin: 0; /* Réinitialisation du centrage du texte */
-    font-size: 1.5rem; /* Ajustement de la taille de la police pour mobile */
+    font-size: 20px;
+    line-height: 1.5;
   }
 }
+
+
 
 
 .quotes_name {
@@ -515,21 +535,6 @@ body {
     margin-top: 60px; /* Réduit l'espace au-dessus de l'image */
   }
 
-  .module_img_txt {
-    flex-direction: column; /* Passe en colonne pour les petits écrans */
-   
-  }
-
-  .quotes {
-    font-size: 1.3rem;
-    line-height: 1.3;
-  }
-
-  .module_img_txt .img_side, 
-  .module_img_txt .quotes_exhibition {
-    max-width: 100%; /* Chaque élément prend toute la largeur disponible */
-  }
-
   .module_img_img {
     flex-direction: column; /* Passe en colonne pour les petits écrans */
   }
@@ -586,8 +591,8 @@ body {
 
 .gallery_img_container {
   display: flex;
-  align-items: center; /* Centre verticalement l'image */
-  justify-content: center; /* Centre horizontalement l'image */
+  align-items: center; 
+  justify-content: center; 
   flex-grow: 1; /* L'image occupe tout l'espace disponible verticalement */
   width: 100%; 
 }
