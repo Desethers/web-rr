@@ -347,8 +347,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+<<<<<<< HEAD
   .imagefull img {
   margin-top: 2rem;}  
+=======
+  .imagefull img { 
+  
+  margin-top: 5rem;}
+>>>>>>> d23928d (lunch)
 }  
 
 
