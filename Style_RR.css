@@ -178,7 +178,7 @@ body {
   .explore .bouton_more_exhibitions, 
   .explore .bouton {
     font-size: 16px;  /* Réduction de la taille de la police */
-    width: 200px;     /* Réduction de la largeur des boutons */
+    width: 100%;     /* Réduction de la largeur des boutons */
     height: 20px;     /* Réduction de la hauteur des boutons */
     padding: 10px;     /* Ajustement du padding */
     margin-top: 1.8rem;
