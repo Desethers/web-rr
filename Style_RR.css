@@ -62,7 +62,8 @@ body {
   }
 }
 
-/* Conteneur principal */
+
+/* INDEX */
 .container1 {
   margin-top: 30px;
 }
@@ -74,41 +75,25 @@ body {
   padding-top: 20px;
 }
 
+/* Section d'exploration pour les expositions */
 .explore {
-  margin-top:4.5rem;
+  margin-top: 4.5rem;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .explore h1 {
-  
   font-size: 2.3rem;
   margin-bottom: 1rem;
 }
+
 .explore p {
-  line-height: 1.3;
-  font-size: 1.6rem ;
+  line-height: 1.5;
+  font-size: 1.6rem;
   color: grey;
 }
 
-.bouton {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-size: 18px;
-  width: 250px;
-  height: 30px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 2px;
-  margin-top:5rem;
-}
-
-.bouton:hover {
-  background-color: black;
-  transition: background-color 0.3s;
-  color: white;
-}
-
+/* Section des cartes d'œuvres d'art */
 .container2 {
   margin-top: 9rem;
   display: flex;
@@ -119,25 +104,24 @@ body {
   gap: 20px;
 }
 
+/* Carte individuelle pour chaque œuvre */
 .card {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
   padding: 20px;
-  
-  border: px solid #c8ccce;
+  border: 0px solid #c8ccce;
   border-radius: 10px;
   background-color: #f9f9f9;
-  
-  /* Taille uniforme pour toutes les cartes */
   flex: 1 1 300px;
   max-width: 300px;
   height: 500px;
   box-sizing: border-box;
 }
 
+/* Image des œuvres */
 .card img {
   max-width: 100%;
   height: auto;
@@ -148,72 +132,114 @@ body {
 
 .image-container {
   display: flex;
-  align-items: center; /* Centre verticalement l'image */
-  justify-content: center; /* Centre horizontalement l'image */
-  flex-grow: 1; /* L'image occupe tout l'espace disponible verticalement */
-  width: 100%; 
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
 }
 
+/* Texte légendé sous chaque image */
 .legende {
   text-align: left;
   line-height: 1.3;
-  padding: 0 0px;
   gap: 10px;
-  
-  
 }
 
 .legende h3 {
   margin-bottom: 0.8rem;
 }
 
-
-.bouton, .bouton_artworks {
+/* Bouton commun pour explorer plus d'expositions ou d'œuvres */
+.bouton {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   color: black;
   font-size: 18px;
   width: 250px;
-  height: 30px; 
+  height: 40px;
   padding: 10px;
   border: 1px solid black;
   border-radius: 2px;
-  margin-top: 2.8rem; /* Espace de 30px entre le texte et le bouton */
+  margin-top: 3rem;
+  text-decoration: none;
 }
 
-.bouton:hover, .bouton_artworks:hover {
+.bouton:hover {
   background-color: black;
   transition: background-color 0.3s;
   color: white;
 }
 
+/* Bouton spécifique pour les œuvres d'art */
+.bouton_artworks {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 18px;
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin-top: 2.8rem;
+}
 
+.bouton_artworks:hover {
+  background-color: black;
+  transition: background-color 0.3s;
+  color: white;
+}
 
+/* Adaptation mobile pour les petites résolutions */
 @media (max-width: 768px) {
+  /* Section exploration et container des œuvres d'art */
   .explore, .container2 {
     flex-direction: column;
     align-items: center;
+    text-align: left;
+    font-size: 18px;
   }
 
+  .explore {
+    margin-top: 2rem;
+    text-align: left;
+  }
+
+  /* Réduction de la taille de la police pour mobile */
+  .explore h1 {
+    font-size: 26px;  /* Réduction de la taille du titre */
+  }
+
+  .explore p {
+    font-size: 18px;  /* Réduction de la taille du paragraphe */
+  }
+
+  /* Largeur des boutons adaptée pour les petits écrans */
   .explore_bouton .bouton, .explore_artworks_bouton .bouton_artworks {
     width: 100%;
     max-width: 250px;
+   
   }
 
+  /* Ajustements du container1 pour mobile */
   .container1 {
-    margin-top: 10px;
+    margin-top:1rem ;
   }
 
+  /* Ajustements du container2 pour mobile */
   .container2 {
     margin-top: 50px;
   }
 
+  /* Redimensionnement des images des cartes sur mobile */
   .card img {
     width: 100%;
     max-width: 240px;
   }
 }
+
 
 /* PAST EXHIBITIONS PAGE */
 .container_pastexhibitions {
