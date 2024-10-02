@@ -277,6 +277,11 @@ body {
   box-sizing: border-box;
   
 }
+@media (max-width: 768px) {
+  .card_exhibition {
+    margin-bottom: 3rem;
+  }
+}
 
 .legende_exhibition {
   text-align: left;
