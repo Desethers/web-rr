@@ -205,25 +205,16 @@ body {
   transition: background-color 0.3s;
   color: white;
 }
-<<<<<<< HEAD
 @media (max-width: 768px) {
   /* Forcer la direction colonne et aligner les éléments au centre */
   .hero {
     display: flex;
-=======
-
-/* Adaptation mobile pour les petites résolutions */
-@media (max-width: 768px) {
-  /* Section exploration et container des œuvres d'art */
-  .explore, .container2 {
->>>>>>> f1ba374922f3fa9cee852a5c1d214278c24ef0a1
     flex-direction: column;
     align-items: center;
     text-align: left;
     font-size: 18px;
   }
 
-<<<<<<< HEAD
   /* Les sections "explore" prennent toute la largeur */
   .explore {
     width: 100%; /* Prend toute la largeur de l'écran */
@@ -261,36 +252,6 @@ body {
     flex-direction: column;
     align-items: center; /* Centre chaque carte */
     margin: 20px auto; /* Ajoute de l'espace entre les cartes et les centre */
-=======
-  .explore {
-    margin-top: 2rem;
-    text-align: left;
-  }
-
-  /* Réduction de la taille de la police pour mobile */
-  .explore h1 {
-    font-size: 26px;  /* Réduction de la taille du titre */
-  }
-
-  .explore p {
-    font-size: 18px;  /* Réduction de la taille du paragraphe */
-  }
-
-  /* Largeur des boutons adaptée pour les petits écrans */
-  .explore_bouton .bouton_more_exhibitions, .explore_artworks_bouton .bouton_artworks {
-    width: 100%;
-    max-width: 250px;
-   
-  }
-  .container1 {
-    margin-top:1rem ;
-  }
-  .container2 {
-    margin-top: 5rem;
-  }
-  .legende {
-    font-size: 16px;
->>>>>>> f1ba374922f3fa9cee852a5c1d214278c24ef0a1
   }
 
   /* Les images dans les cartes doivent être responsives */
