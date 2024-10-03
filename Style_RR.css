@@ -187,37 +187,62 @@ body {
   transition: background-color 0.3s;
   color: white;
 }
-
-
-
 @media (max-width: 768px) {
-  .explore, .container2 {
+  /* Forcer la direction colonne et aligner les éléments au centre */
+  .hero {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  /* Ajustement pour que les boutons prennent 100% de la largeur */
-  .explore_bouton .bouton, .explore_artworks_bouton .bouton_artworks {
-    width: 100%; /* Prend toute la largeur du conteneur */
-    max-width: none; /* Supprime la limite maximale de 250px */
-    box-sizing: border-box; /* Assure que padding et bordures sont inclus dans la largeur */
-    padding: 10px; /* Ajuste le padding pour donner plus de confort */
-    margin: 0; /* Assure qu'il n'y a pas de marge externe qui casse la mise en page */
+  /* Les sections "explore" prennent toute la largeur */
+  .explore {
+    width: 100%; /* Prend toute la largeur de l'écran */
+    text-align: left; /* Centre le texte à l'intérieur */
+    padding: 0 10px; /* Ajoute un petit padding sur les côtés pour que ça respire */
   }
 
-  .container1 {
-    margin-top: 10px;
+  /* Les boutons prennent toute la largeur avec un petit padding */
+  .explore .bouton {
+    width: 100%; /* Le bouton prend toute la largeur du conteneur */
+    max-width: none; /* Supprime la restriction de largeur maximale */
+    padding: 25px; /* Ajoute un padding pour un bouton plus confortable */
+    margin: 0 auto; /* Centre le bouton */
+    box-sizing: border-box; /* Inclut padding et bordures dans la largeur */
+    margin-top: 2rem;
   }
 
+  /* Les containers de chaque section */
+  .container1, .container2 {
+    margin-top: 20px; /* Espacement entre les sections */
+  }
+
+  /* Centrer les cartes dans le container */
   .container2 {
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les cartes horizontalement */
+    width: 100%; /* Prend toute la largeur */
+    padding: 0;
   }
 
+  /* Styles pour chaque carte */
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre chaque carte */
+    margin: 20px auto; /* Ajoute de l'espace entre les cartes et les centre */
+  }
+
+  /* Les images dans les cartes doivent être responsives */
   .card img {
     width: 100%;
-    max-width: 240px;
+    height: auto; /* Maintient le ratio de l'image */
+    max-width: 240px; /* Limite la largeur des images */
   }
-}
+
+  /* Alignement et marges des légendes dans les cartes
+
 
 
 /* PAST EXHIBITIONS PAGE */
