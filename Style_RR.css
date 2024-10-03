@@ -658,13 +658,76 @@ body {
 }
 
 
-/* CONTAINER FOR GALLERY ITEM */
+/* GALLERY ITEM */
 .container-gallery-item {
-  display: flex; /* Utilise flexbox pour aligner les colonnes */
+  display: flex; 
   width: 100%;
-  margin-top: 4rem;
+  margin: 4rem 0; 
+  gap: 2rem; 
+  justify-content: space-between;
 }
 
+/* COLUMN FOR ARTWORKS */
+.artworks-column {
+  width: 70%; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  padding-right: 2rem; /* Espace entre l'image et la colonne de texte */
+}
+
+/* STYLES FOR ARTWORK IMAGE */
+.artworks-image {
+  max-width: 100%; 
+  margin-bottom: 3rem; 
+  display: block; /* Évite les espaces en ligne autour de l'image */
+}
+
+/* SIDEBAR FOR TEXT AND BUTTON */
+.item-sidebar {
+  width: 30%; /* 30% de la largeur pour la colonne de texte */
+  margin-left: 0rem; /* Espace entre les colonnes */
+  display: flex;
+  flex-direction: column; /* Colonne pour le texte et le bouton */
+  justify-content: flex-start; /* Aligne le contenu vers le haut */
+}
+
+/* STYLES FOR CONTENT INSIDE SIDEBAR */
+.item-sidebar h2 {
+  font-size: 24px; /* Taille de la police du titre */
+  margin-bottom: 0; /* Supprime la marge en bas */
+}
+
+.item-sidebar p {
+  font-size: 16px; /* Taille de la police du paragraphe */
+  margin-bottom: 0; /* Supprime la marge en bas */
+}
+
+/* STYLES FOR BUY BUTTON */
+.buy-button {
+  display: inline-flex; /* Utilise flexbox pour le bouton */
+  justify-content: center; /* Centre le contenu du bouton */
+  align-items: center; /* Aligne verticalement le texte dans le bouton */
+  color: black; /* Couleur du texte */
+  font-size: 18px; /* Taille de la police du bouton */
+  width: 150px; /* Largeur fixe du bouton */
+  height: 30px; /* Hauteur fixe du bouton */
+  padding: 10px; /* Padding intérieur */
+  border: 1px solid black; /* Bordure */
+  border-radius: 2px; /* Coins arrondis */
+  margin: 2rem 0; /* Marge en haut et en bas */
+  cursor: pointer; /* Change le curseur au survol */
+  transition: background-color 0.3s, color 0.3s; /* Ajoute une transition pour le changement de couleur */
+}
+
+/* STYLES FOR BUY BUTTON ON HOVER */
+.buy-button:hover {
+  background-color: black; /* Couleur de fond au survol */
+  color: rgb(255, 255, 255); /* Couleur du texte au survol */
+}
+
+/* MEDIA QUERIES */
 @media (max-width: 768px) {
   .container-gallery-item {
     flex-direction: column; /* Aligne le texte et le bouton en colonne */
@@ -672,110 +735,23 @@ body {
     max-width: 100%;
   }
 
-}
-
-@media screen and (max-width: 768px) {
-  .item-sidebar {
-    width: 100%; /* Prend toute la largeur disponible */
-    margin-top: 2rem;
-  }
-
-  .item-sidebar h2, .item-sidebar p {
-    width: 100%; /* Le titre et le texte prennent la largeur complète */
-    
-  }
-
   .artworks-column {
-    display: flex; /* Utilise flexbox pour centrer le contenu */
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center; /* Centre l'image verticalement */
+    width: 100%; /* Prend toute la largeur disponible sur mobile */
+    padding-right: 0; /* Supprime le padding à droite */
   }
-  
-  .artworks-column img {
-    max-width: 100%; /* L'image prend au maximum toute la largeur disponible sans déformer */
-    height: auto; /* Conserve les proportions de l'image */
-    display: block; /* Évite les espaces en ligne autour de l'image */
-  }
-  
-  /* Bouton aussi centré et ajusté pour mobile */
-  .buy-button {
-    width: 100%;
-   
-}
 
-
-/* COLUMN FOR ARTWORK */
-.artworks-column {
-  width: 70%; 
-  display: flex;
-  flex-direction: column; /* Garde la direction verticale pour l'image */
-  justify-content: center; /* Centre l'image horizontalement */
-  align-items: center; /* Centre l'image verticalement */
-  padding-right: 2rem; /* Espace entre l'image et la colonne de texte */
-}
-
-/* STYLES FOR ARTWORK IMAGE */
-.artworks-image {
-  max-width: 100%;
-  margin-bottom: 3rem;
-  display: block;
-}
-
-/* SIDEBAR FOR TEXT AND BUTTON */
-.item-sidebar {
-  width: 30%; /* 30% de la largeur pour la colonne de texte */
-  margin-left: 2rem; /* Espace entre les colonnes */
-  padding: 0; /* Pas de padding */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-@media screen and (max-width: 768px) {
   .item-sidebar {
-    width: 100%; /* Prend toute la largeur disponible */
+    width: 100%; /* Prend toute la largeur disponible sur mobile */
     margin-left: 0; /* Supprime la marge à gauche */
   }
 
-  .item-sidebar h2, .item-sidebar p {
+  .item-sidebar h2,
+  .item-sidebar p {
     width: 100%; /* Le titre et le texte prennent la largeur complète */
-     
   }
-  
-  /* Bouton aussi centré et ajusté pour mobile */
+
   .buy-button {
     width: 100%;
     max-width: 200px; /* Limite pour éviter qu'il ne prenne toute la largeur */
   }
-}
-/* STYLES FOR CONTENT INSIDE SIDEBAR */
-.item-sidebar h2 {
-  font-size: 24px;
-  margin-bottom: 0;
-}
-
-.item-sidebar p {
-  margin-bottom: 0;
-  font-size: 16px;
-}
-
-.buy-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-size: 18px;
-  width: 150px;
-  height: 30px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 2px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.buy-button:hover {
-  background-color: black;
-  transition: background-color 0.3s;
-  color: rgb(255, 255, 255);
 }
