@@ -62,7 +62,6 @@ body {
   }
 }
 
-
 /* INDEX */
 .container1 {
   margin-top: 30px;
@@ -94,7 +93,7 @@ body {
 }
 
 /* Boutons d'exploration des expositions */
-.explore .bouton_more_exhibitions, 
+.explore .bouton_more_exhibitions,
 .explore .bouton {
   display: inline-flex;
   justify-content: center;
@@ -173,14 +172,13 @@ body {
   margin-bottom: 0.8rem;
 }
 
-
 @media (max-width: 768px) {
-  .explore .bouton_more_exhibitions, 
+  .explore .bouton_more_exhibitions,
   .explore .bouton {
-    font-size: 16px;  /* Réduction de la taille de la police */
-    width: 100%;     /* Réduction de la largeur des boutons */
-    height: 20px;     /* Réduction de la hauteur des boutons */
-    padding: 10px;     /* Ajustement du padding */
+    font-size: 16px; /* Réduction de la taille de la police */
+    width: 100%; /* Réduction de la largeur des boutons */
+    height: 20px; /* Réduction de la hauteur des boutons */
+    padding: 10px; /* Ajustement du padding */
     margin-top: 1.8rem;
   }
 }
@@ -205,65 +203,53 @@ body {
   transition: background-color 0.3s;
   color: white;
 }
+
+/* Adaptation mobile pour les petites résolutions */
 @media (max-width: 768px) {
-  /* Forcer la direction colonne et aligner les éléments au centre */
-  .hero {
-    display: flex;
+  /* Section exploration et container des œuvres d'art */
+  .explore,
+  .container2 {
     flex-direction: column;
     align-items: center;
     text-align: left;
     font-size: 18px;
   }
 
-  /* Les sections "explore" prennent toute la largeur */
   .explore {
-    width: 100%; /* Prend toute la largeur de l'écran */
-    text-align: left; /* Centre le texte à l'intérieur */
-    padding: 0 10px; /* Ajoute un petit padding sur les côtés pour que ça respire */
-  }
-
-  /* Les boutons prennent toute la largeur avec un petit padding */
-  .explore .bouton {
-    width: 100%; /* Le bouton prend toute la largeur du conteneur */
-    max-width: none; /* Supprime la restriction de largeur maximale */
-    padding: 25px; /* Ajoute un padding pour un bouton plus confortable */
-    margin: 0 auto; /* Centre le bouton */
-    box-sizing: border-box; /* Inclut padding et bordures dans la largeur */
     margin-top: 2rem;
+    text-align: left;
   }
 
-  /* Les containers de chaque section */
-  .container1, .container2 {
-    margin-top: 20px; /* Espacement entre les sections */
+  /* Réduction de la taille de la police pour mobile */
+  .explore h1 {
+    font-size: 26px; /* Réduction de la taille du titre */
   }
 
-  /* Centrer les cartes dans le container */
+  .explore p {
+    font-size: 18px; /* Réduction de la taille du paragraphe */
+  }
+
+  /* Largeur des boutons adaptée pour les petits écrans */
+  .explore_bouton .bouton_more_exhibitions,
+  .explore_artworks_bouton .bouton_artworks {
+    width: 100%;
+    max-width: 250px;
+  }
+  .container1 {
+    margin-top: 1rem;
+  }
   .container2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centre les cartes horizontalement */
-    width: 100%; /* Prend toute la largeur */
-    padding: 0;
+    margin-top: 5rem;
+  }
+  .legende {
+    font-size: 16px;
   }
 
-  /* Styles pour chaque carte */
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centre chaque carte */
-    margin: 20px auto; /* Ajoute de l'espace entre les cartes et les centre */
-  }
-
-  /* Les images dans les cartes doivent être responsives */
   .card img {
     width: 100%;
-    height: auto; /* Maintient le ratio de l'image */
-    max-width: 240px; /* Limite la largeur des images */
+    max-width: 240px;
   }
-
-  /* Alignement et marges des légendes dans les cartes
-
-
+}
 
 /* PAST EXHIBITIONS PAGE */
 .container_pastexhibitions {
@@ -287,7 +273,6 @@ body {
   gap: 30px;
   padding: 0;
   box-sizing: border-box;
-  
 }
 @media (max-width: 768px) {
   .card_exhibition {
@@ -308,9 +293,9 @@ body {
 
 .learnmore {
   display: block; /* Permet de placer le lien sur une nouvelle ligne */
-  margin-top: 10px; 
-  color: black; 
-  text-decoration: underline; 
+  margin-top: 10px;
+  color: black;
+  text-decoration: underline;
 }
 .date {
   color: grey;
@@ -329,12 +314,11 @@ body {
 }
 
 .filet {
-  
   border-top: 1px solid #babbba; /* La couleur de la bordure */
   padding: px;
-  margin:  20px 0; /* Marge en haut et en bas */
+  margin: 20px 0; /* Marge en haut et en bas */
   margin-top: 20x;
-  
+
   width: 100%; /* S'assure que la bordure occupe toute la largeur */
 }
 
@@ -353,7 +337,7 @@ body {
 }
 
 .intro_exhibition p {
-  font-size : 20px;
+  font-size: 20px;
 }
 
 .texte_exhibition {
@@ -395,7 +379,6 @@ body {
   }
 }
 
-
 .imagefull img {
   margin-top: 9rem;
   width: 100%;
@@ -403,15 +386,14 @@ body {
 
 @media screen and (max-width: 768px) {
   .imagefull img {
-  margin-top: 2rem;}  
-}  
-
+    margin-top: 2rem;
+  }
+}
 
 .legende_img {
   margin-top: 1rem;
   font-size: 0.9rem;
   line-height: 1.5;
-  
 }
 
 .legende_bouton {
@@ -419,7 +401,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  
 }
 .bouton_inquire {
   display: inline-flex;
@@ -428,14 +409,13 @@ body {
   color: black;
   font-size: 18px;
   width: 250px;
-  height: 30px; 
+  height: 30px;
   padding: 5px;
   border: 1px solid black;
   border-radius: 1px;
   cursor: pointer;
   margin-top: 1rem;
   background-color: white;
-
 }
 
 .bouton_inquire:hover {
@@ -454,8 +434,6 @@ body {
     width: 100%; /* Le bouton prend toute la largeur disponible */
   }
 }
-
-
 
 .module_img_txt {
   display: flex;
@@ -503,7 +481,6 @@ body {
     text-align: center; /* Centre le texte */
     margin: 0 auto; /* Centre horizontalement le conteneur de texte */
     padding: 0 0px; /* Ajoute un padding pour ne pas coller aux bords */
- 
   }
 
   .legende_img {
@@ -577,8 +554,6 @@ body {
   }
 }
 
-
-
 /* Style pour les écrans mobiles */
 @media (max-width: 768px) {
   .title_exhibition h1 {
@@ -603,8 +578,7 @@ body {
   .quotes_full {
     font-size: 22px; /* Réduit la taille de la police pour les petits écrans */
     max-width: 100%; /* S'assure que le texte ne dépasse pas l'écran */
-    margin-top:2rem ;
- 
+    margin-top: 2rem;
   }
 
   .filet_mobile {
@@ -618,7 +592,6 @@ body {
     font-size: 16px;
   }
 }
-
 
 .paintings_container {
   margin-top: 2rem;
@@ -640,7 +613,7 @@ body {
   border: px solid #c8ccce;
   border-radius: 10px;
   background-color: #f9f9f9;
-  
+
   /* Taille uniforme pour toutes les cartes */
   flex: 1 1 300px;
   max-width: 300px;
@@ -658,41 +631,40 @@ body {
 
 .gallery_img_container {
   display: flex;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   flex-grow: 1; /* L'image occupe tout l'espace disponible verticalement */
-  width: 100%; 
+  width: 100%;
 }
 
 .artworks_medium h2 {
   margin-top: 8rem;
-  font-size: 24px;  
+  font-size: 24px;
 }
-
 
 /* GALLERY ITEM */
 .container-gallery-item {
-  display: flex; 
+  display: flex;
   width: 100%;
-  margin: 4rem 0; 
-  gap: 2rem; 
+  margin: 4rem 0;
+  gap: 2rem;
   justify-content: space-between;
 }
 
 /* COLUMN FOR ARTWORKS */
 .artworks-column {
-  width: 70%; 
+  width: 70%;
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-right: 2rem; /* Espace entre l'image et la colonne de texte */
 }
 
 /* STYLES FOR ARTWORK IMAGE */
 .artworks-image {
-  max-width: 100%; 
-  margin-bottom: 3rem; 
+  max-width: 100%;
+  margin-bottom: 3rem;
   display: block; /* Évite les espaces en ligne autour de l'image */
 }
 
