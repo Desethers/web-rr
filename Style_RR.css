@@ -49,10 +49,6 @@ body {
 }
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 35f6695
 
 
 /* INDEX */
@@ -165,24 +161,6 @@ body {
   margin-bottom: 0.8rem;
 }
 
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-@media (max-width: 768px) {
-  .explore .bouton_more_exhibitions,
-  .explore .bouton {
-    font-size: 16px; /* Réduction de la taille de la police */
-    width: 100%; /* Réduction de la largeur des boutons */
-    height: 20px; /* Réduction de la hauteur des boutons */
-    padding: 10px; /* Ajustement du padding */
-    margin-top: 1.8rem;
-  }
-}
-=======
-
->>>>>>> bb9b20b (rr)
->>>>>>> 35f6695
 
 /* Bouton spécifique pour les œuvres d'art */
 .bouton_artworks {
@@ -205,59 +183,6 @@ body {
   color: white;
 }
 
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-/* Adaptation mobile pour les petites résolutions */
-@media (max-width: 768px) {
-  /* Section exploration et container des œuvres d'art */
-  .explore,
-  .container2 {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    font-size: 18px;
-  }
-
-  .explore {
-    margin-top: 2rem;
-    text-align: left;
-  }
-
-  /* Réduction de la taille de la police pour mobile */
-  .explore h1 {
-    font-size: 26px; /* Réduction de la taille du titre */
-  }
-
-  .explore p {
-    font-size: 18px; /* Réduction de la taille du paragraphe */
-  }
-
-  /* Largeur des boutons adaptée pour les petits écrans */
-  .explore_bouton .bouton_more_exhibitions,
-  .explore_artworks_bouton .bouton_artworks {
-    width: 100%;
-    max-width: 250px;
-  }
-  .container1 {
-    margin-top: 1rem;
-  }
-  .container2 {
-    margin-top: 5rem;
-  }
-  .legende {
-    font-size: 16px;
-  }
-
-  .card img {
-    width: 100%;
-    max-width: 240px;
-  }
-}
-=======
->>>>>>> bb9b20b (rr)
->>>>>>> 35f6695
 
 /* PAST EXHIBITIONS PAGE */
 .container_pastexhibitions {
@@ -275,13 +200,7 @@ body {
   gap: 30px;
   padding: 0;
   box-sizing: border-box;
-<<<<<<< HEAD
-  
 }
-
-=======
-}
->>>>>>> 35f6695
 
 
 .legende_exhibition {
@@ -360,28 +279,12 @@ body {
   margin-bottom: 1.5em;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 35f6695
 
 .imagefull img {
   margin-top: 9rem;
   width: 100%;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-@media screen and (max-width: 768px) {
-  .imagefull img {
-    margin-top: 2rem;
-  }
-}
-=======
->>>>>>> 35f6695
-
->>>>>>> bb9b20b (rr)
 
 .legende_img {
   margin-top: 1rem;
@@ -417,24 +320,6 @@ body {
   color: white;
 }
 
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-@media screen and (max-width: 768px) {
-  .legende_bouton {
-    flex-direction: column; /* Aligne le texte et le bouton en colonne */
-    align-items: flex-start; /* Aligne le contenu à gauche */
-  }
-
-  .bouton_inquire {
-    width: 100%; /* Le bouton prend toute la largeur disponible */
-  }
-}
-=======
-
->>>>>>> bb9b20b (rr)
->>>>>>> 35f6695
 
 .module_img_txt {
   display: flex;
@@ -463,30 +348,6 @@ body {
 }
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  .module_img_txt .img_side {
-    width: 100%; /* L'image prend toute la largeur */
-    text-align: center; /* Centre le contenu de l'image */
-  }
-
-  .module_img_txt .quotes_exhibition {
-    max-width: 100%; /* Réduit la largeur du conteneur pour qu'il ne prenne pas toute la place */
-    text-align: center; /* Centre le texte */
-    margin: 0 auto; /* Centre horizontalement le conteneur de texte */
-    padding: 0 0px; /* Ajoute un padding pour ne pas coller aux bords */
-  }
-
-  .legende_img {
-    text-align: left;
-    font-size: 10px;
-    margin-top: 0.3rem;
-  }
-}
-=======
->>>>>>> bb9b20b (rr)
->>>>>>> 35f6695
 
 .quotes {
   font-size: 28px;
@@ -528,62 +389,6 @@ body {
 }
 
 
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-  .img_side {
-    width: 100%; /* Chaque image occupe toute la largeur de son contenant */
-    text-align: center; /* Centre le contenu textuel si présent */
-  }
-
-  .img_side img {
-    width: 100%; /* L'image prend toute la largeur du conteneur parent */
-    height: auto; /* Conserve le ratio de l'image */
-  }
-}
-
-/* Style pour les écrans mobiles */
-@media (max-width: 768px) {
-  .title_exhibition h1 {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    font-size: 32px; /* Réduit la taille du texte des titres */
-  }
-
-  .containerintro {
-    flex-direction: column; /* Colonne pour les écrans plus petits */
-    gap: 2rem; /* Réduit l'espace entre les éléments */
-  }
-
-  .imagefull img {
-    margin-top: 2rem; /* Réduit l'espace au-dessus de l'image */
-  }
-
-  .module_img_img {
-    flex-direction: column; /* Passe en colonne pour les petits écrans */
-  }
-
-  .quotes_full {
-    font-size: 22px; /* Réduit la taille de la police pour les petits écrans */
-    max-width: 100%; /* S'assure que le texte ne dépasse pas l'écran */
-    margin-top: 2rem;
-  }
-
-  .filet_mobile {
-    display: block; /* Affiche le filet uniquement sur les petits écrans */
-    border: 1px solid #babbba; /* Style du filet */
-    margin: 0 0; /* Espace au-dessus et en dessous du filet */
-    width: 100%; /* S'assure que le filet occupe toute la largeur */
-  }
-
-  .intro_exhibition p {
-    font-size: 16px;
-  }
-}
-=======
->>>>>>> bb9b20b (rr)
->>>>>>> 35f6695
 
 .paintings_container {
   margin-top: 2rem;
@@ -724,7 +529,7 @@ body {
     width: 100%;
     height: 20px;
     padding: 20px;
-    margin-top: 1.8rem;
+    margin-top:2rem;
     box-sizing: border-box; /* Prendre en compte les marges/paddings */
   }
 
@@ -737,6 +542,7 @@ body {
 
   .explore h1 {
     font-size: 28px; /* Ajuster la taille du texte */
+    margin-top: 0rem;
   }
 
   .explore p {
@@ -761,6 +567,7 @@ body {
   .container1 img {
     width: 100%; /* L'image occupe 100 % du conteneur */
     height: auto; /* Conserve le ratio d'aspect pour éviter la déformation */
+    margin-bottom: -2rem;;
   }
 
   .container2 {
