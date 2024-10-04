@@ -48,19 +48,8 @@ body {
   align-items: center;
 }
 
-/* Styles pour les petits écrans */
-@media only screen and (max-width: 767px) {
-  .navbar {
-    align-items: flex-start;
-    flex-direction: column;
-  }
 
-  .navbar .navlinks ul {
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1em;
-  }
-}
+
 
 
 /* INDEX */
@@ -174,16 +163,6 @@ body {
 }
 
 
-@media (max-width: 768px) {
-  .explore .bouton_more_exhibitions, 
-  .explore .bouton {
-    font-size: 16px;  /* Réduction de la taille de la police */
-    width: 100%;     /* Réduction de la largeur des boutons */
-    height: 20px;     /* Réduction de la hauteur des boutons */
-    padding: 10px;     /* Ajustement du padding */
-    margin-top: 1.8rem;
-  }
-}
 
 /* Bouton spécifique pour les œuvres d'art */
 .bouton_artworks {
@@ -206,51 +185,6 @@ body {
   color: white;
 }
 
-/* Adaptation mobile pour les petites résolutions */
-@media (max-width: 768px) {
-  /* Section exploration et container des œuvres d'art */
-  .explore, .container2 {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    font-size: 18px;
-  }
-
-  .explore {
-    margin-top: 2rem;
-    text-align: left;
-  }
-
-  /* Réduction de la taille de la police pour mobile */
-  .explore h1 {
-    font-size: 26px;  /* Réduction de la taille du titre */
-  }
-
-  .explore p {
-    font-size: 18px;  /* Réduction de la taille du paragraphe */
-  }
-
-  /* Largeur des boutons adaptée pour les petits écrans */
-  .explore_bouton .bouton_more_exhibitions, .explore_artworks_bouton .bouton_artworks {
-    width: 100%;
-    max-width: 250px;
-   
-  }
-  .container1 {
-    margin-top:1rem ;
-  }
-  .container2 {
-    margin-top: 5rem;
-  }
-  .legende {
-    font-size: 16px;
-  }
-
-  .card img {
-    width: 100%;
-    max-width: 240px;
-  }
-}
 
 
 /* PAST EXHIBITIONS PAGE */
@@ -262,13 +196,7 @@ body {
   place-content: center space-between;
 }
 
-/* Styles pour les petits écrans */
-@media only screen and (max-width: 767px) {
-  .container_pastexhibitions {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-}
+
 
 .card_exhibition {
   align-items: center;
@@ -277,11 +205,7 @@ body {
   box-sizing: border-box;
   
 }
-@media (max-width: 768px) {
-  .card_exhibition {
-    margin-bottom: 3rem;
-  }
-}
+
 
 .legende_exhibition {
   text-align: left;
@@ -360,28 +284,6 @@ body {
   margin-bottom: 1.5em;
 }
 
-/* Styles spécifiques pour mobile */
-@media screen and (max-width: 768px) {
-  .texte_exhibition {
-    max-width: 100%;
-    padding: 0 15px;
-    column-count: 1;
-    column-gap: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-    margin-top: 3rem;
-  }
-
-  /* Ajoute des sauts de ligne après chaque paragraphe sur mobile */
-  .texte_exhibition p {
-    margin-bottom: 1em; /* Espace après chaque paragraphe */
-  }
-
-  /* Ajoute un saut de ligne supplémentaire après certains paragraphes */
-  .texte_exhibition p:nth-child(3n) {
-    margin-bottom: em; /* Plus grand espace tous les 3 paragraphes */
-  }
-}
 
 
 .imagefull img {
@@ -389,10 +291,6 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .imagefull img {
-  margin-top: 2rem;}  
-}  
 
 
 .legende_img {
@@ -432,17 +330,6 @@ body {
   color: white;
 }
 
-@media screen and (max-width: 768px) {
-  .legende_bouton {
-    flex-direction: column; /* Aligne le texte et le bouton en colonne */
-    align-items: flex-start; /* Aligne le contenu à gauche */
-  }
-
-  .bouton_inquire {
-    width: 100%; /* Le bouton prend toute la largeur disponible */
-  }
-}
-
 
 
 .module_img_txt {
@@ -471,35 +358,7 @@ body {
   max-width: 50%; /* Optionnel, pour limiter la largeur du texte */
 }
 
-/* Styles spécifiques pour les écrans mobiles */
-@media (max-width: 768px) {
-  .module_img_txt {
-    flex-direction: column; /* Passe en colonne sur mobile */
-    gap: 2rem; /* Réduit l'espace entre l'image et le texte */
-    margin-top: 2rem; /* Ajuste la marge pour mobile */
-    align-items: center; /* Centre les éléments horizontalement */
-    max-width: 100%; /* Empêche le dépassement horizontal */
-  }
 
-  .module_img_txt .img_side {
-    width: 100%; /* L'image prend toute la largeur */
-    text-align: center; /* Centre le contenu de l'image */
-  }
-
-  .module_img_txt .quotes_exhibition {
-    max-width: 100%; /* Réduit la largeur du conteneur pour qu'il ne prenne pas toute la place */
-    text-align: center; /* Centre le texte */
-    margin: 0 auto; /* Centre horizontalement le conteneur de texte */
-    padding: 0 0px; /* Ajoute un padding pour ne pas coller aux bords */
- 
-  }
-
-  .legende_img {
-    text-align: left;
-    font-size: 10px;
-    margin-top: 0.3rem;
-  }
-}
 
 .quotes {
   font-size: 28px;
@@ -509,12 +368,6 @@ body {
   margin: 0 auto; /* Centre le conteneur de texte */
 }
 
-@media (max-width: 768px) {
-  .quotes {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-}
 
 .quotes_name {
   font-size: 1rem;
@@ -546,66 +399,7 @@ body {
   height: auto; /* Pour maintenir le ratio de l'image */
 }
 
-@media (max-width: 768px) {
-  .module_img_img {
-    flex-direction: column; /* Passe les éléments en colonne sur mobile */
-    gap: 4rem; /* Réduit l'espace entre les éléments pour mobile */
-    margin-top: 4rem; /* Ajuste la marge pour mobile */
-    align-items: center; /* Centre les éléments horizontalement */
-  }
 
-  .img_side {
-    width: 100%; /* Chaque image occupe toute la largeur de son contenant */
-    text-align: center; /* Centre le contenu textuel si présent */
-  }
-
-  .img_side img {
-    width: 100%; /* L'image prend toute la largeur du conteneur parent */
-    height: auto; /* Conserve le ratio de l'image */
-  }
-}
-
-
-
-/* Style pour les écrans mobiles */
-@media (max-width: 768px) {
-  .title_exhibition h1 {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    font-size: 32px; /* Réduit la taille du texte des titres */
-  }
-
-  .containerintro {
-    flex-direction: column; /* Colonne pour les écrans plus petits */
-    gap: 2rem; /* Réduit l'espace entre les éléments */
-  }
-
-  .imagefull img {
-    margin-top: 2rem; /* Réduit l'espace au-dessus de l'image */
-  }
-
-  .module_img_img {
-    flex-direction: column; /* Passe en colonne pour les petits écrans */
-  }
-
-  .quotes_full {
-    font-size: 22px; /* Réduit la taille de la police pour les petits écrans */
-    max-width: 100%; /* S'assure que le texte ne dépasse pas l'écran */
-    margin-top:2rem ;
- 
-  }
-
-  .filet_mobile {
-    display: block; /* Affiche le filet uniquement sur les petits écrans */
-    border: 1px solid #babbba; /* Style du filet */
-    margin: 0 0; /* Espace au-dessus et en dessous du filet */
-    width: 100%; /* S'assure que le filet occupe toute la largeur */
-  }
-
-  .intro_exhibition p {
-    font-size: 16px;
-  }
-}
 
 
 .paintings_container {
@@ -727,31 +521,189 @@ body {
   color: rgb(255, 255, 255); /* Couleur du texte au survol */
 }
 
-/* MEDIA QUERIES */
 @media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .navbar .navlinks ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1em;
+  }
+
+  /* Explore buttons */
+  .explore .bouton_more_exhibitions, 
+  .explore .bouton {
+    font-size: 16px;
+    width: 100%;
+    height: 20px;
+    padding: 20px;
+    margin-top: 1.8rem;
+    box-sizing: border-box; /* Prendre en compte les marges/paddings */
+  }
+
+  /* Explore and artworks container */
+  .explore, .container2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .explore h1 {
+    font-size: 28px; /* Ajuster la taille du texte */
+  }
+
+  .explore p {
+    font-size: 18px; /* Ajuster la taille du texte */
+  }
+
+  .explore_bouton .bouton_more_exhibitions, 
+  .explore_artworks_bouton .bouton_artworks {
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+    
+    margin: 0 auto; /* Centrer le bouton */
+  }
+
+  .container1 {
+    margin-top: 1rem;
+    width: 100%;
+ 
+  }
+
+  .container1 img {
+    width: 100%; /* L'image occupe 100 % du conteneur */
+    height: auto; /* Conserve le ratio d'aspect pour éviter la déformation */
+  }
+
+  .container2 {
+    margin-top: 5rem;
+  }
+
+  .legende {
+    font-size: 16px;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  /* Past exhibitions */
+  .container_pastexhibitions {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card_exhibition {
+    margin-bottom: 3rem;
+  }
+
+  /* Exhibition text */
+  .texte_exhibition {
+    max-width: 100%;
+    padding: 0 15px;
+    column-count: 1;
+    column-gap: 0;
+    font-size: 16px;
+    margin-top: 3rem;
+  }
+
+  .texte_exhibition p {
+    margin-bottom: 1em;
+  }
+
+  .texte_exhibition p:nth-child(3n) {
+    margin-bottom: 1em;
+  }
+
+  /* Full image */
+  .imagefull img {
+    margin-top: 2rem;
+  }
+
+  .legende_img {
+    text-align: left;
+    font-size: 10px;
+    margin-top: 0.3rem;
+  }
+
+  /* Inquiry button */
+  .legende_bouton {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bouton_inquire {
+    width: 100%;
+  }
+
+  /* Image-text module */
+  .module_img_txt {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  .module_img_txt .img_side {
+    width: 100%;
+    text-align: center;
+  }
+
+  .module_img_txt .quotes_exhibition {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* Quotes */
+  .quotes {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .quotes_full {
+    font-size: 22px;
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  /* Intro exhibition */
+  .intro_exhibition p {
+    font-size: 16px;
+  }
+
+  /* Gallery item */
   .container-gallery-item {
-    flex-direction: column; /* Aligne le texte et le bouton en colonne */
+    flex-direction: column;
     align-items: flex-start;
     max-width: 100%;
   }
 
   .artworks-column {
-    width: 100%; /* Prend toute la largeur disponible sur mobile */
-    padding-right: 0; /* Supprime le padding à droite */
+    width: 100%;
+    padding-right: 0;
   }
 
   .item-sidebar {
-    width: 100%; /* Prend toute la largeur disponible sur mobile */
-    margin-left: 0; /* Supprime la marge à gauche */
+    width: 100%;
+    margin-left: 0;
   }
 
   .item-sidebar h2,
   .item-sidebar p {
-    width: 100%; /* Le titre et le texte prennent la largeur complète */
+    width: 100%;
   }
 
   .buy-button {
     width: 100%;
-    max-width: 200px; /* Limite pour éviter qu'il ne prenne toute la largeur */
+    max-width: 200px;
   }
 }
