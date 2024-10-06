@@ -48,9 +48,6 @@ body {
   align-items: center;
 }
 
-
-
-
 /* INDEX */
 .container1 {
   margin-top: 30px;
@@ -161,7 +158,6 @@ body {
   margin-bottom: 0.8rem;
 }
 
-
 /* Bouton spécifique pour les œuvres d'art */
 .bouton_artworks {
   display: inline-flex;
@@ -183,7 +179,6 @@ body {
   color: white;
 }
 
-
 /* PAST EXHIBITIONS PAGE */
 .container_pastexhibitions {
   margin-top: 100px;
@@ -193,15 +188,12 @@ body {
   place-content: center space-between;
 }
 
-
-
 .card_exhibition {
   align-items: center;
   gap: 30px;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 .legende_exhibition {
   text-align: left;
@@ -279,12 +271,10 @@ body {
   margin-bottom: 1.5em;
 }
 
-
 .imagefull img {
   margin-top: 9rem;
   width: 100%;
 }
-
 
 .legende_img {
   margin-top: 1rem;
@@ -320,7 +310,6 @@ body {
   color: white;
 }
 
-
 .module_img_txt {
   display: flex;
   margin-top: 120px;
@@ -347,8 +336,6 @@ body {
   max-width: 50%; /* Optionnel, pour limiter la largeur du texte */
 }
 
-
-
 .quotes {
   font-size: 28px;
   line-height: 1.3;
@@ -356,7 +343,6 @@ body {
   text-align: left; /* Alignement du texte à gauche */
   margin: 0 auto; /* Centre le conteneur de texte */
 }
-
 
 .quotes_name {
   font-size: 1rem;
@@ -387,8 +373,6 @@ body {
   width: 100%; /* L'image prend toute la largeur du conteneur parent */
   height: auto; /* Pour maintenir le ratio de l'image */
 }
-
-
 
 .paintings_container {
   margin-top: 2rem;
@@ -509,7 +493,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
   /* Navbar */
   .navbar {
     align-items: flex-start;
@@ -523,18 +506,19 @@ body {
   }
 
   /* Explore buttons */
-  .explore .bouton_more_exhibitions, 
+  .explore .bouton_more_exhibitions,
   .explore .bouton {
     font-size: 16px;
     width: 100%;
     height: 20px;
     padding: 20px;
-    margin-top:2rem;
+    margin-top: 2rem;
     box-sizing: border-box; /* Prendre en compte les marges/paddings */
   }
 
   /* Explore and artworks container */
-  .explore, .container2 {
+  .explore,
+  .container2 {
     flex-direction: column;
     align-items: center;
     text-align: left;
@@ -549,25 +533,24 @@ body {
     font-size: 18px; /* Ajuster la taille du texte */
   }
 
-  .explore_bouton .bouton_more_exhibitions, 
+  .explore_bouton .bouton_more_exhibitions,
   .explore_artworks_bouton .bouton_artworks {
     width: 100%;
     max-width: 250px;
     box-sizing: border-box;
-    
+
     margin: 0 auto; /* Centrer le bouton */
   }
 
   .container1 {
     margin-top: 1rem;
     width: 100%;
- 
   }
 
   .container1 img {
     width: 100%; /* L'image occupe 100 % du conteneur */
     height: auto; /* Conserve le ratio d'aspect pour éviter la déformation */
-    margin-bottom: -2rem;;
+    margin-bottom: -2rem;
   }
 
   .container2 {
@@ -594,6 +577,17 @@ body {
   }
 
   /* Exhibition text */
+
+  .intro_exhibition {
+    text-align: center; /* Centre le texte */
+    width: 100%;
+    flex-direction: column; /* Prend toute la largeur de la colonne */
+  }
+
+  .intro_exhibition p {
+    flex-direction: column;
+    margin: 0; /* Supprime les marges par défaut des paragraphes */
+  }
   .texte_exhibition {
     max-width: 100%;
     padding: 0 15px;
@@ -695,4 +689,29 @@ body {
     width: 100%;
     max-width: 200px;
   }
+}
+
+/* Footer Styles */
+.footer {
+  color: #000000;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10rem;
+}
+
+.footer a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  width: 100%; /* Occupe toute la largeur */
+  display: flex;
+  justify-content: space-between; /* Espace entre les éléments */
+  align-items: center; /* Centrage vertical des éléments */
 }
