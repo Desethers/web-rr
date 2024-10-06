@@ -316,7 +316,7 @@ body {
   gap: 80px; /* Espace entre l'image et le texte */
   justify-content: space-between; /* Espace les éléments sur toute la largeur */
   align-items: center; /* Centre les éléments verticalement */
-  width: 100vw; /* S'assure que le conteneur prend la largeur de l'écran */
+  width: 100%; /* Corriger la largeur */
 }
 
 .module_img_txt .img_side {
