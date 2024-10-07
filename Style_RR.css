@@ -183,10 +183,10 @@ body {
 
 /* PAST EXHIBITIONS PAGE */
 .container_pastexhibitions {
-  margin-top: 100px;
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 3rem;
   place-content: center space-between;
 }
 
@@ -194,7 +194,6 @@ body {
 
 .card_exhibition {
   align-items: center;
-  gap: 30px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -204,7 +203,7 @@ body {
   text-align: left;
   line-height: 1.4;
   padding: 0;
-  margin-top: 20px;
+  margin-top: rem;
 }
 
 .legende_exhibition h3 {
@@ -343,8 +342,6 @@ body {
   width: 100%; /* Le texte prend également toute la largeur */
   max-width: 50%; /* Optionnel, pour limiter la largeur du texte */
 }
-
-
 
 .quotes {
   font-size: 28px;
@@ -546,6 +543,7 @@ body {
     flex-direction: column;
     gap: 1rem;
     margin-top: 1em;
+    font-size: 14px;
   }
   .navbar .titre {
     font-size: 24px;
@@ -616,15 +614,15 @@ body {
   /* Past exhibitions */
   .container_pastexhibitions {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 3rem;
   }
 
   .card_exhibition {
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
   }
 
   .title_exhibition h1 {
-    margin-top: 3rem;
+   
     margin-bottom: 1rem;
     font-size: 32px;
   }
@@ -632,7 +630,7 @@ body {
   .containerintro {
     flex-direction: column;
     align-items: center; /* Centre les colonnes horizontalement */
-    gap: 20px; /* Réduit l'écart entre les sections sur mobile */
+    gap: 1rem; /* Réduit l'écart entre les sections sur mobile */
   }
 
   .intro_exhibition {
@@ -647,11 +645,7 @@ body {
     font-size: 18px; /* Taille de texte légèrement plus petite pour mobile si besoin */
   }
 
-
-
-
   /* Exhibition text */
-
   .texte_exhibition {
     max-width: 100%;
     padding: 0 15px;
