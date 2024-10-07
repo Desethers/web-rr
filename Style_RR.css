@@ -686,6 +686,7 @@ body {
   }
 
   .bouton_inquire {
+    font-size: 15px;
     width: 100%; /* Le bouton prend 100% de la largeur de son conteneur */
     max-width: 100%; /* Assure que le bouton ne dépasse pas */
     padding: 20px; /* Ajuste le padding pour rendre le bouton plus confortable */
