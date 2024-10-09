@@ -159,7 +159,6 @@ body {
   margin-bottom: 0.8rem;
 }
 
-
 /* Bouton spécifique pour les œuvres d'art */
 .bouton_artworks {
   display: inline-flex;
@@ -181,7 +180,6 @@ body {
   color: white;
 }
 
-
 /* PAST EXHIBITIONS PAGE */
 .container_pastexhibitions {
   margin-top: 3rem;
@@ -196,7 +194,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
 
 .legende_exhibition {
   text-align: left;
@@ -272,12 +269,10 @@ body {
   margin-bottom: 1.5em;
 }
 
-
 .imagefull img {
   margin-top: 9rem;
   width: 100%;
 }
-
 
 .legende_img {
   margin-top: 1rem;
@@ -300,7 +295,7 @@ body {
   color: black;
   font-size: 18px;
   width: 250px; /* Largeur fixe pour les grands écrans */
-  height: 30px;
+  height: 40px;
   border: 1px solid black;
   border-radius: 1px;
   cursor: pointer;
@@ -348,7 +343,6 @@ body {
   text-align: left; /* Alignement du texte à gauche */
   margin: 0 auto; /* Centre le conteneur de texte */
 }
-
 
 .quotes_name {
   font-size: 1rem;
@@ -455,7 +449,6 @@ body {
   display: block; /* Évite les espaces en ligne autour de l'image */
 }
 
-/* SIDEBAR FOR TEXT AND BUTTON */
 .item-sidebar {
   width: 30%; /* 30% de la largeur pour la colonne de texte */
   margin-left: 0rem; /* Espace entre les colonnes */
@@ -464,7 +457,6 @@ body {
   justify-content: flex-start; /* Aligne le contenu vers le haut */
 }
 
-/* STYLES FOR CONTENT INSIDE SIDEBAR */
 .item-sidebar h2 {
   font-size: 24px; /* Taille de la police du titre */
   margin-bottom: 0; /* Supprime la marge en bas */
@@ -475,24 +467,22 @@ body {
   margin-bottom: 0; /* Supprime la marge en bas */
 }
 
-/* STYLES FOR BUY BUTTON */
 .buy-button {
-  display: inline-flex; /* Utilise flexbox pour le bouton */
-  justify-content: center; /* Centre le contenu du bouton */
-  align-items: center; /* Aligne verticalement le texte dans le bouton */
-  color: black; /* Couleur du texte */
-  font-size: 18px; /* Taille de la police du bouton */
-  width: 150px; /* Largeur fixe du bouton */
-  height: 30px; /* Hauteur fixe du bouton */
-  padding: 10px; /* Padding intérieur */
-  border: 1px solid black; /* Bordure */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 18px;
+  width: 150px;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid black;
   border-radius: 2px; /* Coins arrondis */
   margin: 2rem 0; /* Marge en haut et en bas */
   cursor: pointer; /* Change le curseur au survol */
   transition: background-color 0.3s, color 0.3s; /* Ajoute une transition pour le changement de couleur */
 }
 
-/* STYLES FOR BUY BUTTON ON HOVER */
 .buy-button:hover {
   background-color: black; /* Couleur de fond au survol */
   color: rgb(255, 255, 255); /* Couleur du texte au survol */
@@ -547,18 +537,19 @@ body {
   }
 
   /* Explore buttons */
-  .explore .bouton_more_exhibitions, 
+  .explore .bouton_more_exhibitions,
   .explore .bouton {
     font-size: 16px;
     width: 100%;
     height: 20px;
     padding: 20px;
-    margin-top:2rem;
+    margin-top: 2rem;
     box-sizing: border-box; /* Prendre en compte les marges/paddings */
   }
 
   /* Explore and artworks container */
-  .explore, .container2 {
+  .explore,
+  .container2 {
     flex-direction: column;
     align-items: center;
     text-align: left;
@@ -573,25 +564,24 @@ body {
     font-size: 18px; /* Ajuster la taille du texte */
   }
 
-  .explore_bouton .bouton_more_exhibitions, 
+  .explore_bouton .bouton_more_exhibitions,
   .explore_artworks_bouton .bouton_artworks {
     width: 100%;
     max-width: 250px;
     box-sizing: border-box;
-    
+
     margin: 0 auto; /* Centrer le bouton */
   }
 
   .container1 {
     margin-top: 1rem;
     width: 100%;
- 
   }
 
   .container1 img {
     width: 100%; /* L'image occupe 100 % du conteneur */
     height: auto; /* Conserve le ratio d'aspect pour éviter la déformation */
-    margin-bottom: -2rem;;
+    margin-bottom: -2rem;
   }
 
   .container2 {
@@ -615,7 +605,7 @@ body {
   .legende_exhibition {
     font-size: 16px;
     line-height: 1.4;
-    
+
     margin-top: 0.5rem;
   }
 
@@ -627,8 +617,9 @@ body {
     margin-bottom: 0rem;
   }
 
+  /* EXHIBITION PAGE */
+
   .title_exhibition h1 {
-   
     margin-bottom: 1rem;
     font-size: 32px;
   }
@@ -644,14 +635,13 @@ body {
     max-width: 600px; /* Limite la largeur pour éviter que le texte s'étale trop */
     text-align: left; /* Aligne le texte à gauche */
     padding-bottom: 1rem; /* Ajoute de l'espace sous le texte avant le filet */
-    border-bottom: 1px solid #000; /* Filet sous chaque section */
+    border-bottom: 1px solid #babbba; /* Filet sous chaque section */
   }
 
   .intro_exhibition p {
     font-size: 18px; /* Taille de texte légèrement plus petite pour mobile si besoin */
   }
 
-  /* Exhibition text */
   .texte_exhibition {
     max-width: 100%;
     padding: 0 15px;
@@ -669,12 +659,12 @@ body {
     margin-bottom: 1em;
   }
   .imagefull img {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   .legende_img {
     text-align: left;
-    font-size: 10px;
+    font-size: 11px;
     margin-top: 0.3rem;
   }
 
@@ -693,8 +683,6 @@ body {
     box-sizing: border-box; /* Bordure et padding inclus dans la largeur */
   }
 
-
-  /* Image-text module */
   .module_img_txt {
     flex-direction: column;
     gap: 2rem;
@@ -733,13 +721,30 @@ body {
 
   .img_side {
     width: 100%; /* Chaque image prend toute la largeur du contenant */
-    
   }
 
-  
-
-  /* Intro exhibition */
   .intro_exhibition p {
+    font-size: 16px;
+  }
+
+  /* GALLERY PAGE */
+  .paintings_container {
+    margin-top: 1rem;
+    flex-direction: column; /* Les cartes seront empilées verticalement */
+    align-items: center; /* Centre horizontalement les éléments */
+  }
+
+  .gallery_card {
+    width: 100%; /* Ajuste la largeur de la carte pour qu'elle s'adapte à l'écran */
+
+    margin-bottom: 1rem; /* Ajoute un espace entre les cartes */
+  }
+  .artworks_medium {
+    margin-top: 0px !important; /* Ajuste l'espace au-dessus des sections d'artworks */
+    font-size: 1px;
+  }
+  .artworks_medium h2 {
+    margin-top: 2rem;
     font-size: 16px;
   }
 
