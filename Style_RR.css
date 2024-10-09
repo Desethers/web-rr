@@ -207,7 +207,7 @@ body {
 }
 
 .learnmore {
-  display: block; /* Permet de placer le lien sur une nouvelle ligne */
+  display: block;
   margin-top: 0.5rem;
   color: black;
   text-decoration: underline;
@@ -229,7 +229,7 @@ body {
 }
 
 .filet {
-  border-top: 1px solid #babbba; /* La couleur de la bordure */
+  border-top: 1px solid #babbba;
   padding: px;
   margin: 20px 0; /* Marge en haut et en bas */
   width: 100%; /* S'assure que la bordure occupe toute la largeur */
@@ -457,14 +457,22 @@ body {
   justify-content: flex-start; /* Aligne le contenu vers le haut */
 }
 
-.item-sidebar h2 {
-  font-size: 24px; /* Taille de la police du titre */
+.title-item h2 {
+  font-size: 28px; /* Taille de la police du titre */
   margin-bottom: 0; /* Supprime la marge en bas */
+  font-weight: 600;
+}
+.medium-item {
+  color: #aa9898;
+  font-size: 22px;
 }
 
-.item-sidebar p {
-  font-size: 16px; /* Taille de la police du paragraphe */
-  margin-bottom: 0; /* Supprime la marge en bas */
+.description-item p {
+  font-size: 18px; /* Taille de la police du paragraphe */
+  margin-bottom: 0;
+  color: #000000;
+  line-height: 1.5;
+  margin-top: 1rem;
 }
 
 .buy-button {
