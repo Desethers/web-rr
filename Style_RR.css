@@ -464,11 +464,13 @@ body {
 }
 .medium-item {
   color: #aa9898;
-  font-size: 22px;
+  font-size: 16px;
+  margin-top: 1rem;
+  line-height: 1.5;
 }
 
 .description-item p {
-  font-size: 18px; /* Taille de la police du paragraphe */
+  font-size: 16px; /* Taille de la police du paragraphe */
   margin-bottom: 0;
   color: #000000;
   line-height: 1.5;
@@ -480,7 +482,7 @@ body {
   justify-content: center;
   align-items: center;
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   width: 150px;
   height: 30px;
   padding: 10px;
