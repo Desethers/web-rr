@@ -70,7 +70,7 @@ body {
 
 .explore h1 {
   font-size: 2.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 .explore p {
@@ -124,10 +124,10 @@ body {
   padding: 20px;
   border: 0px solid #c8ccce;
   border-radius: 10px;
-  background-color: #f9f9f9;
+  background-color: none;
   flex: 1 1 300px;
   max-width: 300px;
-  height: 500px;
+  height: 450px;
   box-sizing: border-box;
 }
 
@@ -153,10 +153,24 @@ body {
   text-align: left;
   line-height: 1.3;
   gap: 10px;
+ 
 }
 
 .legende h3 {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0rem;
+  font-size: 18px;
+  
+}
+
+/* Aligner cards ecran 13" */
+@media (max-width: 1300px) {
+  .container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  }
 }
 
 /* Bouton spécifique pour les œuvres d'art */
@@ -171,7 +185,7 @@ body {
   padding: 10px;
   border: 1px solid black;
   border-radius: 2px;
-  margin-top: 2.8rem;
+  margin-top: 2rem;
 }
 
 .bouton_artworks:hover {
