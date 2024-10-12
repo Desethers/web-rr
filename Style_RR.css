@@ -452,7 +452,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 2rem; /* Espace entre l'image et la colonne de texte */
+  padding-right: 5rem; /* Espace entre l'image et la colonne de texte */
 }
 
 /* STYLES FOR ARTWORK IMAGE */
@@ -468,6 +468,7 @@ body {
   display: flex;
   flex-direction: column; /* Colonne pour le texte et le bouton */
   justify-content: flex-start; /* Aligne le contenu vers le haut */
+  padding-right: 5rem;
 }
 
 .title-item h2 {
@@ -484,10 +485,12 @@ body {
 
 .description-item p {
   font-size: 16px; /* Taille de la police du paragraphe */
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   color: #000000;
   line-height: 1.5;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #babbba;
+  padding-top: 2rem;
 }
 
 .buy-button {
@@ -509,6 +512,11 @@ body {
 .buy-button:hover {
   background-color: black; /* Couleur de fond au survol */
   color: rgb(255, 255, 255); /* Couleur du texte au survol */
+}
+
+.type-form-item {
+  border-top: 1px solid #babbba;
+  padding-top: 0.5rem;
 }
 
 /* Footer Styles */
