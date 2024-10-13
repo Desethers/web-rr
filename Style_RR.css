@@ -440,8 +440,8 @@ body {
 .container-gallery-item {
   display: flex;
   width: 100%;
-  margin: 4rem 0;
-  gap: 4rem;
+  margin: 5rem 0;
+  gap: 8rem;
   justify-content: space-between;
 }
 
@@ -452,7 +452,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 6rem; /* Espace entre l'image et la colonne de texte */
 }
 
 /* STYLES FOR ARTWORK IMAGE */
