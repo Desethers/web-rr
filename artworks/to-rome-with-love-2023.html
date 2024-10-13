@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RR_website</title>
+    <link rel="stylesheet" href="/Style_RR.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="/index.html" class="titre">Raphaël Rossi</a>
+      <div class="navlinks">
+        <ul>
+          <li>
+            <a href="/exhibitions/past-exhibitions.html">Past exhibitions</a>
+          </li>
+          <li><a href="/artworks/gallery.html">Gallery</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </div>
+      <img
+        class="menu-hamburger"
+        src="hamburger-62-48.png"
+        alt="menu hamburger"
+      />
+    </nav>
+
+    <!-- GALLERY ITEM SECTION -->
+    <div class="container-gallery-item">
+      <div class="artworks-column">
+        <img
+          src="/assets/artworks-img/to-rome-with-love-face-2023.jpg"
+          alt="collage to rome with love jesse eisenberg"
+          class="artworks-image"
+        />
+        <img
+          src="/assets/artworks-img/to-rome-with-love-side-2023.jpg"
+          alt="peinture abstraite joan didion"
+          class="artworks-image"
+        />
+        <img
+          src="/assets/artworks-img/to-rome-with-love-unframed-2023.jpg"
+          alt="peinture abstraite joan didion"
+          class="artworks-image"
+        />
+      </div>
+      <div class="item-sidebar">
+        <div class="title-item">
+          <h2>To Rome With love, 2023</h2>
+        </div>
+        <div class="medium-item">
+          <p>
+            collage<br />
+            22 x 30 cm
+          </p>
+        </div>
+        <div class="price-item">
+          <p>€500</p>
+        </div>
+
+        <a href="artworks/gallery.html" class="buy-button">Buy this collage</a>
+
+        <div class="description-item">
+          <p>
+            In this collage, we see a picture of a scene from the movie "To Rome
+            with love". <br /><br />
+            This body of work represents an iteration in abstract composition
+            that merges the roles of viewer and producer, aiming to reveal a
+            motif drawn from the cinematic spectator experience.
+          </p>
+        </div>
+
+        <!-- formulaire Tally -->
+        <div class="type-form-item">
+          <iframe
+            data-tally-src="https://tally.so/embed/wL7RqG?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="200"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="null"
+          ></iframe>
+          <script>
+            var d = document,
+              w = "https://tally.so/widgets/embed.js",
+              v = function () {
+                "undefined" != typeof Tally
+                  ? Tally.loadEmbeds()
+                  : d
+                      .querySelectorAll("iframe[data-tally-src]:not([src])")
+                      .forEach(function (e) {
+                        e.src = e.dataset.tallySrc;
+                      });
+              };
+            if ("undefined" != typeof Tally) v();
+            else if (d.querySelector('script[src="' + w + '"]') == null) {
+              var s = d.createElement("script");
+              s.src = w;
+              s.onload = v;
+              s.onerror = v;
+              d.body.appendChild(s);
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="legal">
+          <p>&copy; 2024 Raphaël Rossi - All Rights Reserved</p>
+        </div>
+        <div class="social-media">
+          <a href="https://www.instagram.com/raphaaelrossi/" target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
