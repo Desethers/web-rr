@@ -396,6 +396,16 @@ body {
   gap: 2rem;
 }
 
+.collages-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
 .gallery_card {
   display: flex;
   flex-direction: column;
