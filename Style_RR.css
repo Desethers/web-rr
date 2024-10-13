@@ -472,7 +472,7 @@ body {
 }
 
 .title-item h2 {
-  font-size: 24px; /* Taille de la police du titre */
+  font-size: 26px; /* Taille de la police du titre */
   margin-bottom: 0; /* Supprime la marge en bas */
   font-weight: 600;
 }
@@ -495,18 +495,24 @@ body {
   padding-bottom: 2rem;
 }
 
+.price-item {
+  margin-top: 2rem;
+  font-size: 18px;
+}
+
 .buy-button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   color: black;
-  font-size: 16px;
+  font-size: 18px;
   width: 150px;
   height: 25px;
   padding: 10px;
   border: 1px solid black;
   border-radius: 2px; /* Coins arrondis */
-  margin: 2rem 0; /* Marge en haut et en bas */
+  margin-bottom: 2rem;
+  margin-top: 1rem;
   cursor: pointer; /* Change le curseur au survol */
   transition: background-color 0.3s, color 0.3s; /* Ajoute une transition pour le changement de couleur */
 }
