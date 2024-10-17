@@ -394,15 +394,44 @@ body {
 
 /* GALLERY */
 
+.gallery_card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  border: px solid #c8ccce;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+
+  /* Taille uniforme pour toutes les cartes */
+  flex: 1 1 300px;
+  max-width: 250px;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+.gallery_card .legende h3 {
+  font-size: 16px;
+}
+.gallery_card .legende p {
+  font-size: 16px;
+}
+
+
+
 .paintings_container {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between ;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
 }
+
+
 
 .collages-container {
   margin-top: 2rem;
@@ -414,23 +443,7 @@ body {
   gap: 2rem;
 }
 
-.gallery_card {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 20px;
-  border: px solid #c8ccce;
-  border-radius: 10px;
-  background-color: #f9f9f9;
 
-  /* Taille uniforme pour toutes les cartes */
-  flex: 1 1 300px;
-  max-width: 300px;
-  height: 500px;
-  box-sizing: border-box;
-}
 
 .gallery_card img {
   max-width: 100%;
