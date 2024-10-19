@@ -25,8 +25,8 @@ body {
 }
 
 .navbar .titre {
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 600;
 }
 
 .navbar .navlinks ul {
@@ -36,6 +36,7 @@ body {
 
 .navbar .navlinks ul li {
   padding-right: 10px;
+  font-size: 16px;
 }
 
 .navbar .menu-hamburger {
@@ -48,21 +49,7 @@ body {
   align-items: center;
 }
 
-/* Styles pour les petits écrans */
-@media only screen and (max-width: 767px) {
-  .navbar {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .navbar .navlinks ul {
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1em;
-  }
-}
-
-/* Conteneur principal */
+/* INDEX */
 .container1 {
   margin-top: 30px;
 }
@@ -74,41 +61,50 @@ body {
   padding-top: 20px;
 }
 
+/* Section d'exploration pour les expositions */
 .explore {
-  margin-top:4.5rem;
+  margin-top: 4.5rem;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .explore h1 {
-  
   font-size: 2.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
 }
+
 .explore p {
-  line-height: 1.3;
-  font-size: 1.6rem ;
+  line-height: 1.5;
+  font-size: 1.6rem;
   color: grey;
 }
 
-.bouton {
+/* Boutons d'exploration des expositions */
+.explore .bouton_more_exhibitions,
+.explore .bouton {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   color: black;
   font-size: 18px;
   width: 250px;
-  height: 30px;
+  height: 40px;
   padding: 10px;
   border: 1px solid black;
   border-radius: 2px;
-  margin-top:5rem;
+  margin-top: 3rem;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.bouton:hover {
+.explore .bouton_more_exhibitions:hover,
+.explore .bouton:hover {
   background-color: black;
-  transition: background-color 0.3s;
   color: white;
 }
 
+/* Section des cartes d'œuvres d'art */
 .container2 {
   margin-top: 9rem;
   display: flex;
@@ -119,25 +115,24 @@ body {
   gap: 20px;
 }
 
+/* Carte individuelle pour chaque œuvre */
 .card {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
   padding: 20px;
-  
-  border: px solid #c8ccce;
+  border: 0px solid #c8ccce;
   border-radius: 10px;
   background-color: #f9f9f9;
-  
-  /* Taille uniforme pour toutes les cartes */
   flex: 1 1 300px;
   max-width: 300px;
-  height: 500px;
+  height: 450px;
   box-sizing: border-box;
 }
 
+/* Image des œuvres */
 .card img {
   max-width: 100%;
   height: auto;
@@ -148,114 +143,92 @@ body {
 
 .image-container {
   display: flex;
-  align-items: center; /* Centre verticalement l'image */
-  justify-content: center; /* Centre horizontalement l'image */
-  flex-grow: 1; /* L'image occupe tout l'espace disponible verticalement */
-  width: 100%; 
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
 }
 
+/* Texte légendé sous chaque image */
 .legende {
   text-align: left;
   line-height: 1.3;
-  padding: 0 0px;
   gap: 10px;
-  
-  
 }
 
 .legende h3 {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0rem;
+  font-size: 18px;
 }
 
+/* Aligner cards ecran 13" */
+@media (max-width: 1300px) {
+  .container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+}
 
-.bouton, .bouton_artworks {
+/* Bouton spécifique pour les œuvres d'art */
+.bouton_artworks {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   color: black;
   font-size: 18px;
   width: 250px;
-  height: 30px; 
+  height: 40px;
   padding: 10px;
   border: 1px solid black;
   border-radius: 2px;
-  margin-top: 2.8rem; /* Espace de 30px entre le texte et le bouton */
+  margin-top: 2rem;
 }
 
-.bouton:hover, .bouton_artworks:hover {
+.bouton_artworks:hover {
   background-color: black;
   transition: background-color 0.3s;
   color: white;
 }
 
-
-
-@media (max-width: 768px) {
-  .explore, .container2 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .explore_bouton .bouton, .explore_artworks_bouton .bouton_artworks {
-    width: 100%;
-    max-width: 250px;
-  }
-
-  .container1 {
-    margin-top: 10px;
-  }
-
-  .container2 {
-    margin-top: 50px;
-  }
-
-  .card img {
-    width: 100%;
-    max-width: 240px;
-  }
-}
-
 /* PAST EXHIBITIONS PAGE */
 .container_pastexhibitions {
-  margin-top: 100px;
+  margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
   place-content: center space-between;
-}
-
-/* Styles pour les petits écrans */
-@media only screen and (max-width: 767px) {
-  .container_pastexhibitions {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
 }
 
 .card_exhibition {
   align-items: center;
-  gap: 30px;
   padding: 0;
   box-sizing: border-box;
-  
+  margin-bottom: 3rem;
 }
 
 .legende_exhibition {
   text-align: left;
   line-height: 1.4;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 0.5rem;
+  font-size: 16px;
 }
 
 .legende_exhibition h3 {
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  font-weight: 550;
 }
 
 .learnmore {
-  display: block; /* Permet de placer le lien sur une nouvelle ligne */
-  margin-top: 10px; 
-  color: black; 
-  text-decoration: underline; 
+  display: block;
+  margin-top: 0.5rem;
+  color: black;
+  text-decoration: underline;
+  font-size: 16px;
 }
 .date {
   color: grey;
@@ -268,18 +241,15 @@ body {
 /* EXHIBITION PAGE */
 
 .title_exhibition h1 {
-  margin-top: 9rem;
-  margin-bottom: 2rem;
-  font-size: 52px;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 48px;
 }
 
 .filet {
-  
-  border-top: 1px solid #babbba; /* La couleur de la bordure */
+  border-top: 1px solid #babbba;
   padding: px;
-  margin:  20px 0; /* Marge en haut et en bas */
-  margin-top: 20x;
-  
+  margin: 20px 0; /* Marge en haut et en bas */
   width: 100%; /* S'assure que la bordure occupe toute la largeur */
 }
 
@@ -298,23 +268,24 @@ body {
 }
 
 .intro_exhibition p {
-  font-size : 20px;
+  font-size: 20px;
 }
 
 .texte_exhibition {
   max-width: 80%;
   font-size: 20px;
   line-height: 1.3;
-  margin-top: 10rem;
-  
-  
+  margin-top: 7rem;
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
   column-count: 2;
-  column-gap: 8rem; /* Réduit l'espace entre les colonnes */
+  column-gap: 8rem;
 }
 
+.texte_exhibition p {
+  margin-bottom: 1.5em;
+}
 
 .imagefull img {
   margin-top: 9rem;
@@ -325,7 +296,6 @@ body {
   margin-top: 1rem;
   font-size: 0.9rem;
   line-height: 1.5;
-  
 }
 
 .legende_bouton {
@@ -333,23 +303,23 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  
+  max-width: 100%;
 }
+
 .bouton_inquire {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   color: black;
   font-size: 18px;
-  width: 250px;
-  height: 30px; 
-  padding: 5px;
+  width: 250px; /* Largeur fixe pour les grands écrans */
+  height: 40px;
   border: 1px solid black;
   border-radius: 1px;
   cursor: pointer;
   margin-top: 1rem;
   background-color: white;
-
+  max-width: 100%;
 }
 
 .bouton_inquire:hover {
@@ -358,29 +328,34 @@ body {
   color: white;
 }
 
-
-
 .module_img_txt {
   display: flex;
   margin-top: 120px;
   gap: 80px; /* Espace entre l'image et le texte */
-  justify-content: center; /* Centre les éléments horizontalement */
+  justify-content: space-between; /* Espace les éléments sur toute la largeur */
   align-items: center; /* Centre les éléments verticalement */
+  width: 100vw; /* S'assure que le conteneur prend la largeur de l'écran */
 }
 
 .module_img_txt .img_side {
   flex: 1;
-  max-width: 50%; /* Limite la largeur de l'image à 50% */
+  width: 100%; /* L'image occupe toute la largeur du conteneur */
+}
+
+.module_img_txt .img_side img {
+  width: 100%; /* S'assure que l'image occupe toute la largeur de son conteneur */
+  height: auto; /* Garde les proportions de l'image */
 }
 
 .module_img_txt .quotes_exhibition {
   flex: 1;
   display: block; /* Passe de flex à block pour empiler les éléments verticalement */
-  max-width: 50%; /* Limite la largeur du texte à 50% */
+  width: 100%; /* Le texte prend également toute la largeur */
+  max-width: 50%; /* Optionnel, pour limiter la largeur du texte */
 }
 
 .quotes {
-  font-size: 1.7rem;
+  font-size: 28px;
   line-height: 1.3;
   max-width: 400px;
   text-align: left; /* Alignement du texte à gauche */
@@ -394,9 +369,7 @@ body {
   max-width: 400px; /* Assure une largeur cohérente avec le texte principal */
 }
 
-
 .quotes_full {
- 
   margin: 100px auto 0 auto;
   font-size: 2.2rem;
   line-height: 1.3;
@@ -405,14 +378,13 @@ body {
 
 .module_img_img {
   display: flex;
-  margin-top: 120px;
+  margin-top: 4rem;
   gap: 50px; /* Espace entre l'image et le texte */
-  justify-content: space-between; /* Centre les éléments horizontalement */
+  justify-content: space-between; /* Espace les éléments horizontalement sur les écrans plus larges */
 }
 
 .img_side {
   width: 50%; /* Chaque img_side occupe 50% de la largeur du parent */
-
 }
 
 .img_side img {
@@ -420,67 +392,33 @@ body {
   height: auto; /* Pour maintenir le ratio de l'image */
 }
 
+/* GALLERY */
 
+.gallery_card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  border: px solid #c8ccce;
+  border-radius: 10px;
+  background-color: #f9f9f9;
 
-/* Style pour les écrans mobiles */
-@media (max-width: 768px) {
-  .title_exhibition h1 {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    font-size: 2.5rem; /* Réduit la taille du texte des titres */
-  }
-
-  .containerintro {
-    flex-direction: column; /* Colonne pour les écrans plus petits */
-    gap: 20px; /* Réduit l'espace entre les éléments */
-  }
-
-  .texte_extraverted {
-    column-count: 1; /* Réduit le nombre de colonnes à 1 */
-    column-gap: 20px; /* Réduit l'écart entre les colonnes */
-    margin-top: 20px;
-  }
-
-  .texte_extraverted .texte_part1,
-  .texte_extraverted .texte_part2 {
-    margin-bottom: 20px; /* Ajoute un espace entre les paragraphes */
-  }
-
-  .imagefull img {
-    margin-top: 60px; /* Réduit l'espace au-dessus de l'image */
-  }
-
-  .module_img_txt {
-    flex-direction: column; /* Passe en colonne pour les petits écrans */
-   
-  }
-
-  .quotes {
-    font-size: 1.3rem;
-    line-height: 1.3;
-  }
-
-  .module_img_txt .img_side, 
-  .module_img_txt .quotes_exhibition {
-    max-width: 100%; /* Chaque élément prend toute la largeur disponible */
-  }
-
-  .module_img_img {
-    flex-direction: column; /* Passe en colonne pour les petits écrans */
-  }
-
-  .quotes_full {
-    font-size: 1.5rem; /* Réduit la taille de la police pour les petits écrans */
-    max-width: 100%; /* S'assure que le texte ne dépasse pas l'écran */
-  }
-
-  .filet_mobile {
-    display: block; /* Affiche le filet uniquement sur les petits écrans */
-    border: 1px solid #babbba; /* Style du filet */
-    margin: 20px 0; /* Espace au-dessus et en dessous du filet */
-    width: 100%; /* S'assure que le filet occupe toute la largeur */
-  }
+  /* Taille uniforme pour toutes les cartes */
+  flex: 1 1 300px;
+  max-width: 250px;
+  height: 400px;
+  box-sizing: border-box;
 }
+
+.gallery_card .legende h3 {
+  font-size: 16px;
+}
+.gallery_card .legende p {
+  font-size: 16px;
+}
+
 
 
 .paintings_container {
@@ -493,23 +431,19 @@ body {
   gap: 2rem;
 }
 
-.gallery_card {
+
+
+.collages-container {
+  margin-top: 2rem;
   display: flex;
-  flex-direction: column;
-  align-items: left;
+  flex-direction: row;
   justify-content: space-between;
-  gap: 10px;
-  padding: 20px;
-  border: px solid #c8ccce;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  
-  /* Taille uniforme pour toutes les cartes */
-  flex: 1 1 300px;
-  max-width: 300px;
-  height: 500px;
-  box-sizing: border-box;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
+
+
 
 .gallery_card img {
   max-width: 100%;
@@ -521,61 +455,78 @@ body {
 
 .gallery_img_container {
   display: flex;
-  align-items: center; /* Centre verticalement l'image */
-  justify-content: center; /* Centre horizontalement l'image */
+  align-items: center;
+  justify-content: center;
   flex-grow: 1; /* L'image occupe tout l'espace disponible verticalement */
-  width: 100%; 
+  width: 100%;
 }
 
 .artworks_medium h2 {
   margin-top: 8rem;
-  font-size: 24px;  
+  font-size: 18px;
+  font-weight: 600;
 }
 
-
-/* CONTAINER FOR GALLERY ITEM */
+/* GALLERY ITEM */
 .container-gallery-item {
-  display: flex; /* Utilise flexbox pour aligner les colonnes */
+  display: flex;
   width: 100%;
-  margin-top: 4rem;
+  margin: 5rem 0;
+  gap: 0rem;
+  justify-content: space-between;
 }
 
-/* COLUMN FOR ARTWORK */
+/* COLUMN FOR ARTWORKS */
 .artworks-column {
-  width: 70%; 
+  width: 75%;
   display: flex;
-  flex-direction: column; /* Garde la direction verticale pour l'image */
-  justify-content: center; /* Centre l'image horizontalement */
-  align-items: center; /* Centre l'image verticalement */
-  padding-right: 2rem; /* Espace entre l'image et la colonne de texte */
+  flex-direction: column;
+  align-items: center;
 }
 
 /* STYLES FOR ARTWORK IMAGE */
 .artworks-image {
   max-width: 100%;
   margin-bottom: 3rem;
-  display: block;
+  display: block; /* Évite les espaces en ligne autour de l'image */
 }
 
-/* SIDEBAR FOR TEXT AND BUTTON */
 .item-sidebar {
-  width: 30%; /* 30% de la largeur pour la colonne de texte */
-  margin-left: 2rem; /* Espace entre les colonnes */
-  padding: 0; /* Pas de padding */
+  width: 25%; /* 30% de la largeur pour la colonne de texte */
+  margin-left: 0rem; /* Espace entre les colonnes */
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: column; /* Colonne pour le texte et le bouton */
+  justify-content: flex-start; /* Aligne le contenu vers le haut */
+  padding-right: 0rem;
 }
 
-/* STYLES FOR CONTENT INSIDE SIDEBAR */
-.item-sidebar h2 {
-  font-size: 24px;
-  margin-bottom: 0;
+.title-item h2 {
+  font-size: 26px; /* Taille de la police du titre */
+  margin-bottom: 0; /* Supprime la marge en bas */
+  font-weight: 600;
 }
-
-.item-sidebar p {
-  margin-bottom: 0;
+.medium-item {
+  color: #aa9898;
   font-size: 16px;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.description-item p {
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  border-top: 1px solid #babbba;
+  border-bottom: 1px solid #babbba;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.price-item {
+  margin-top: 2rem;
+  font-size: 18px;
 }
 
 .buy-button {
@@ -585,16 +536,315 @@ body {
   color: black;
   font-size: 18px;
   width: 150px;
-  height: 30px;
+  height: 25px;
   padding: 10px;
   border: 1px solid black;
-  border-radius: 2px;
-  margin-top: 2rem;
+  border-radius: 2px; /* Coins arrondis */
   margin-bottom: 2rem;
+  margin-top: 1rem;
+  cursor: pointer; /* Change le curseur au survol */
+  transition: background-color 0.3s, color 0.3s; /* Ajoute une transition pour le changement de couleur */
 }
 
 .buy-button:hover {
-  background-color: black;
-  transition: background-color 0.3s;
-  color: rgb(255, 255, 255);
+  background-color: black; /* Couleur de fond au survol */
+  color: rgb(255, 255, 255); /* Couleur du texte au survol */
+}
+
+.type-form-item {
+  margin-right: 2rem;
+}
+
+/* Footer Styles */
+.footer {
+  color: #000000;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10rem;
+}
+
+.footer a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  width: 100%; /* Occupe toute la largeur */
+  display: flex;
+  justify-content: space-between; /* Espace entre les éléments */
+  align-items: center; /* Centrage vertical des éléments */
+}
+
+@media (max-width: 768px) {
+  body {
+    font-family: "raleway", helvetica, sans-serif;
+    padding: 20px;
+  }
+
+  /* Navbar */
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .navbar .navlinks ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1em;
+    font-size: 14px;
+  }
+  .navbar .titre {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  /* Explore buttons */
+  .explore .bouton_more_exhibitions,
+  .explore .bouton {
+    font-size: 16px;
+    width: 100%;
+    height: 20px;
+    padding: 20px;
+    margin-top: 2rem;
+    box-sizing: border-box; /* Prendre en compte les marges/paddings */
+  }
+
+  /* Explore and artworks container */
+  .explore,
+  .container2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .explore h1 {
+    font-size: 28px; /* Ajuster la taille du texte */
+    margin-top: 0rem;
+  }
+
+  .explore p {
+    font-size: 18px; /* Ajuster la taille du texte */
+  }
+
+  .explore_bouton .bouton_more_exhibitions,
+  .explore_artworks_bouton .bouton_artworks {
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+
+    margin: 0 auto; /* Centrer le bouton */
+  }
+
+  .container1 {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .container1 img {
+    width: 100%; /* L'image occupe 100 % du conteneur */
+    height: auto; /* Conserve le ratio d'aspect pour éviter la déformation */
+    margin-bottom: -2rem;
+  }
+
+  .container2 {
+    margin-top: 5rem;
+  }
+
+  .legende {
+    font-size: 16px;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  /* Past exhibitions */
+  .container_pastexhibitions {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .legende_exhibition {
+    font-size: 16px;
+    line-height: 1.4;
+
+    margin-top: 0.5rem;
+  }
+
+  .legende_exhibition h3 {
+    font-size: 18px;
+  }
+
+  .card_exhibition {
+    margin-bottom: 0rem;
+  }
+
+  /* EXHIBITION PAGE */
+
+  .title_exhibition h1 {
+    margin-bottom: 1rem;
+    font-size: 32px;
+  }
+
+  .containerintro {
+    flex-direction: column;
+    align-items: center; /* Centre les colonnes horizontalement */
+    gap: 1rem; /* Réduit l'écart entre les sections sur mobile */
+  }
+
+  .intro_exhibition {
+    width: 100%; /* Chaque section occupe 100% de la largeur */
+    max-width: 600px; /* Limite la largeur pour éviter que le texte s'étale trop */
+    text-align: left; /* Aligne le texte à gauche */
+    padding-bottom: 1rem; /* Ajoute de l'espace sous le texte avant le filet */
+    border-bottom: 1px solid #babbba; /* Filet sous chaque section */
+  }
+
+  .intro_exhibition p {
+    font-size: 18px; /* Taille de texte légèrement plus petite pour mobile si besoin */
+  }
+
+  .texte_exhibition {
+    max-width: 100%;
+    padding: 0 15px;
+    column-count: 1;
+    column-gap: 0;
+    font-size: 16px;
+    margin-top: 3rem;
+  }
+
+  .texte_exhibition p {
+    margin-bottom: 1em;
+  }
+
+  .texte_exhibition p:nth-child(3n) {
+    margin-bottom: 1em;
+  }
+  .imagefull img {
+    margin-top: 3rem;
+  }
+
+  .legende_img {
+    text-align: left;
+    font-size: 11px;
+    margin-top: 0.3rem;
+  }
+
+  .legende_bouton {
+    flex-direction: column; /* Réorganise les éléments en colonne sur mobile */
+    align-items: left; /* Centrer les éléments */
+    width: 100%; /* Conteneur prend toute la largeur */
+    box-sizing: border-box; /* Inclut padding et bordures dans la largeur */
+  }
+
+  .bouton_inquire {
+    font-size: 15px;
+    width: 100%; /* Le bouton prend 100% de la largeur de son conteneur */
+    max-width: 100%; /* Assure que le bouton ne dépasse pas */
+    padding: 20px; /* Ajuste le padding pour rendre le bouton plus confortable */
+    box-sizing: border-box; /* Bordure et padding inclus dans la largeur */
+  }
+
+  .module_img_txt {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  .module_img_txt .img_side {
+    width: 100%;
+    text-align: center;
+  }
+
+  .module_img_txt .quotes_exhibition {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* Quotes */
+  .quotes {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .quotes_full {
+    font-size: 22px;
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .module_img_img {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .img_side {
+    width: 100%; /* Chaque image prend toute la largeur du contenant */
+  }
+
+  .intro_exhibition p {
+    font-size: 16px;
+  }
+
+  /* GALLERY PAGE */
+  .paintings_container {
+    margin-top: 1rem;
+    flex-direction: column; /* Les cartes seront empilées verticalement */
+    align-items: center; /* Centre horizontalement les éléments */
+  }
+
+  .gallery_card {
+    width: 100%; /* Ajuste la largeur de la carte pour qu'elle s'adapte à l'écran */
+
+    margin-bottom: 1rem; /* Ajoute un espace entre les cartes */
+  }
+  .artworks_medium {
+    margin-top: 0px !important; /* Ajuste l'espace au-dessus des sections d'artworks */
+    font-size: 1px;
+  }
+  .artworks_medium h2 {
+    margin-top: 2rem;
+    font-size: 16px;
+  }
+
+  /* Gallery item */
+  .container-gallery-item {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .artworks-column {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .item-sidebar {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .item-sidebar h2,
+  .item-sidebar p {
+    width: 100%;
+  }
+
+  .buy-button {
+    width: 100%;
+    max-width: 200px;
+  }
+  .footer {
+    color: #000000;
+    text-align: left;
+    font-size: 11px;
+    margin-top: 5rem;
+  }
 }

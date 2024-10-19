@@ -31,30 +31,91 @@
       <div class="artworks-column">
         <img
           src="/assets/artworks-img/don-delillo-face-2023.jpg"
-          alt="peinture abstraite don delillo"
-          class="artworks-image"
-        />
-        <img
-          src="/assets/artworks-img /foster-wallace-2024-01.jpg"
-          alt="ottessa moshfegh"
+          alt="Portrait de don delillo"
           class="artworks-image"
         />
       </div>
-      <div class="item-sidebar">
-        <h2>
-          Don DeLillo, 2023<br />Acrylic on canvas <br />
-          50 x 40 cm
-        </h2>
 
-        <a href="artworks/gallery.html" class="buy-button">Add to bag</a>
-        <p>
-          This geometric painting displays the typographic names of contemporary
-          authors such as Don DeLillo, combining geometric patterns and
-          color-slat experimentation. It represents a connection between
-          individuals and post-modern literature from a contemporary city
-          perspective.
-        </p>
+      <div class="item-sidebar">
+        <div class="title-item">
+          <h2>Don DeLillo, 2023</h2>
+        </div>
+        <div class="medium-item">
+          <p>
+            Acrylique sur toile<br />
+            50 x 40 cm
+          </p>
+        </div>
+        <div class="price-item">
+          <p>€1000</p>
+        </div>
+
+        <a href="artworks/gallery.html" class="buy-button">Buy this painting</a>
+
+        <div class="description-item">
+          <p>
+            This painting is part of a unique series that explores the
+            connection between formal and psychological relationships in fiction
+            and urban environments. The geometric composition features the
+            typographic names of contemporary authors, such as Don DeLillo,
+            blending geometric patterns with color-splat experimentation.<br /><br />
+            In this series, I investigate the interplay between personal
+            identity and cultural memory by using the names of contemporary
+            authors as motifs in my paintings. The geometric style, influenced
+            by the architectural forms of public buildings, reflects the
+            perspective of elite culture as viewed from the streets.
+          </p>
+        </div>
+
+        <!-- formulaire Tally -->
+        <div class="type-form-item">
+          <iframe
+            data-tally-src="https://tally.so/embed/wL7RqG?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="200"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="null"
+          ></iframe>
+          <script>
+            var d = document,
+              w = "https://tally.so/widgets/embed.js",
+              v = function () {
+                "undefined" != typeof Tally
+                  ? Tally.loadEmbeds()
+                  : d
+                      .querySelectorAll("iframe[data-tally-src]:not([src])")
+                      .forEach(function (e) {
+                        e.src = e.dataset.tallySrc;
+                      });
+              };
+            if ("undefined" != typeof Tally) v();
+            else if (d.querySelector('script[src="' + w + '"]') == null) {
+              var s = d.createElement("script");
+              s.src = w;
+              s.onload = v;
+              s.onerror = v;
+              d.body.appendChild(s);
+            }
+          </script>
+        </div>
       </div>
     </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="legal">
+          <p>&copy; 2024 Raphaël Rossi - All Rights Reserved</p>
+        </div>
+        <div class="social-media">
+          <a href="https://www.instagram.com/raphaaelrossi/" target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

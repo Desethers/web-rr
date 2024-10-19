@@ -41,21 +41,76 @@
         />
       </div>
       <div class="item-sidebar">
-        <h2>
-          How to be... Millenials ethos, 2023<br />canvas, pictures from
-          magazines<br />
-          40 x 100 cm
-        </h2>
+        <div class="title-item">
+          <h2>How to be...Millenials ethos</h2>
+        </div>
+        <div class="medium-item">
+          <p>
+            Acrylic, c-print, magazines pictures<br />
+            40 x 100 cm
+          </p>
+        </div>
 
         <a href="artworks/gallery.html" class="buy-button">Add to bag</a>
-        <p>
-          This geometric painting displays the typographic names of contemporary
-          authors such as Foster Wallace, combining geometric patterns and
-          color-slat experimentation. It represents a connection between
-          individuals and post-modern literature from a contemporary city
-          perspective.
-        </p>
+
+        <div class="description-item">
+          <p>
+            Cette peinture géométrique affiche les noms typographiques d'auteurs
+            contemporains tels que Don DeLillo, combinant des motifs
+            géométriques et des expérimentations avec des bandes de couleurs.<br /><br />
+            Elle représente un lien entre les individus et la littérature
+            post-moderne, vue sous un angle contemporain urbain.
+          </p>
+        </div>
+
+        <!-- formulaire Tally -->
+        <div class="type-form-item">
+          <iframe
+            data-tally-src="https://tally.so/embed/wL7RqG?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="200"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="null"
+          ></iframe>
+          <script>
+            var d = document,
+              w = "https://tally.so/widgets/embed.js",
+              v = function () {
+                "undefined" != typeof Tally
+                  ? Tally.loadEmbeds()
+                  : d
+                      .querySelectorAll("iframe[data-tally-src]:not([src])")
+                      .forEach(function (e) {
+                        e.src = e.dataset.tallySrc;
+                      });
+              };
+            if ("undefined" != typeof Tally) v();
+            else if (d.querySelector('script[src="' + w + '"]') == null) {
+              var s = d.createElement("script");
+              s.src = w;
+              s.onload = v;
+              s.onerror = v;
+              d.body.appendChild(s);
+            }
+          </script>
+        </div>
       </div>
     </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="legal">
+          <p>&copy; 2024 Raphaël Rossi - All Rights Reserved</p>
+        </div>
+        <div class="social-media">
+          <a href="https://www.instagram.com/raphaaelrossi/" target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
