@@ -9,7 +9,8 @@
 }
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
   padding: 40px;
 }
 
@@ -200,7 +201,8 @@ body {
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  row-gap: 3rem;
+  column-gap: 1.5rem;
   place-content: center space-between;
 }
 
@@ -209,12 +211,11 @@ body {
   align-items: center;
   padding: 0;
   box-sizing: border-box;
-  cursor: pointer; /* Assurez-vous que la carte est cliquable */
 }
 
 .card_exhibition img {
   width: 100%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .legende_exhibition {
@@ -230,22 +231,32 @@ body {
 
 .date {
   font-size: inherit;
-  color: white;
+  color: gray;
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 
 .card_exhibition:hover .date {
-  color: gray;
-  transition: color 0.1s ease;
-}
-
-.card_exhibition:hover h3 {
-  text-decoration: underline;
-  transition: color 0.1s ease;
+  display: block;
 }
 
 .venue {
   font-size: inherit;
   color: gray;
+  display: block;
+}
+
+.card_exhibition:hover .venue {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.card_exhibition:hover h3 {
+  text-decoration: underline;
+  transition: color 0.1s ease;
 }
 
 /* EXHIBITION PAGE */
@@ -429,8 +440,6 @@ body {
   font-size: 16px;
 }
 
-
-
 .paintings_container {
   margin-top: 2rem;
   display: flex;
@@ -441,8 +450,6 @@ body {
   gap: 2rem;
 }
 
-
-
 .collages-container {
   margin-top: 2rem;
   display: flex;
@@ -452,8 +459,6 @@ body {
   flex-wrap: wrap;
   gap: 2rem;
 }
-
-
 
 .gallery_card img {
   max-width: 100%;
@@ -685,8 +690,6 @@ body {
 
     margin-top: 0.5rem;
   }
-
- 
 
   .card_exhibition {
     margin-bottom: 0rem;
