@@ -1,0 +1,74 @@
+/* Gallery page specific styles */
+
+/* Gallery cards containers */
+.paintings_container,
+.collages-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Individual gallery card */
+.gallery_card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  flex: 1 1 300px;
+  max-width: 250px;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+.gallery_card .legende h3,
+.gallery_card .legende p {
+  font-size: 16px;
+}
+
+.gallery_card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery_img_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.artworks_medium h2 {
+  margin-top: 8rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .paintings_container {
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery_card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .artworks_medium h2 {
+    margin-top: 2rem;
+    font-size: 16px;
+  }
+}

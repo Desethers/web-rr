@@ -52,18 +52,6 @@ body {
   align-items: center;
 }
 
-/* INDEX */
-.container1 {
-  margin-top: 30px;
-}
-
-.container1 img {
-  object-fit: cover;
-  max-width: 100%;
-  margin: auto;
-  padding-top: 20px;
-}
-
 /* Section d'exploration pour les expositions */
 .explore {
   margin-top: 4.5rem;
@@ -107,51 +95,6 @@ body {
   color: white;
 }
 
-/* Section des cartes d'œuvres d'art */
-.container2 {
-  margin-top: 9rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-/* Carte individuelle pour chaque œuvre */
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 20px;
-  border: 0px solid #c8ccce;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  flex: 1 1 300px;
-  max-width: 300px;
-  height: 450px;
-  box-sizing: border-box;
-}
-
-/* Image des œuvres */
-.card img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-  width: 100%;
-}
-
 /* Texte légendé sous chaque image */
 .legende {
   text-align: left;
@@ -162,101 +105,6 @@ body {
 .legende h3 {
   margin-bottom: 0rem;
   font-size: 18px;
-}
-
-/* Aligner cards ecran 13" */
-@media (max-width: 1300px) {
-  .container2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-  }
-}
-
-/* Bouton spécifique pour les œuvres d'art */
-.bouton_artworks {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-size: 18px;
-  width: 250px;
-  height: 40px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 2px;
-  margin-top: 2rem;
-}
-
-.bouton_artworks:hover {
-  background-color: black;
-  transition: background-color 0.3s;
-  color: white;
-}
-
-/* PAST EXHIBITIONS PAGE */
-.container_pastexhibitions {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 3rem;
-  column-gap: 1.5rem;
-  place-content: center space-between;
-}
-
-.card_exhibition {
-  display: block;
-  align-items: center;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.card_exhibition img {
-  width: 100%;
-  /* border-radius: 10px; */
-}
-
-.legende_exhibition {
-  color: #333;
-  font-size: 16px;
-  line-height: 150%;
-}
-
-.legende_exhibition h3 {
-  font-size: inherit;
-  font-weight: 500;
-}
-
-.date {
-  font-size: inherit;
-  color: gray;
-  display: none;
-  @media (max-width: 768px) {
-    display: block;
-  }
-}
-
-.card_exhibition:hover .date {
-  display: block;
-}
-
-.venue {
-  font-size: inherit;
-  color: gray;
-  display: block;
-}
-
-.card_exhibition:hover .venue {
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-
-.card_exhibition:hover h3 {
-  text-decoration: underline;
-  transition: color 0.1s ease;
 }
 
 /* EXHIBITION PAGE */
@@ -411,75 +259,6 @@ body {
 .img_side img {
   width: 100%; /* L'image prend toute la largeur du conteneur parent */
   height: auto; /* Pour maintenir le ratio de l'image */
-}
-
-/* GALLERY */
-
-.gallery_card {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 10px;
-  border: px solid #c8ccce;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-
-  /* Taille uniforme pour toutes les cartes */
-  flex: 1 1 300px;
-  max-width: 250px;
-  height: 400px;
-  box-sizing: border-box;
-}
-
-.gallery_card .legende h3 {
-  font-size: 16px;
-}
-.gallery_card .legende p {
-  font-size: 16px;
-}
-
-.paintings_container {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.collages-container {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.gallery_card img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.gallery_img_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1; /* L'image occupe tout l'espace disponible verticalement */
-  width: 100%;
-}
-
-.artworks_medium h2 {
-  margin-top: 8rem;
-  font-size: 18px;
-  font-weight: 600;
 }
 
 /* GALLERY ITEM */
@@ -802,27 +581,6 @@ body {
   }
 
   .intro_exhibition p {
-    font-size: 16px;
-  }
-
-  /* GALLERY PAGE */
-  .paintings_container {
-    margin-top: 1rem;
-    flex-direction: column; /* Les cartes seront empilées verticalement */
-    align-items: center; /* Centre horizontalement les éléments */
-  }
-
-  .gallery_card {
-    width: 100%; /* Ajuste la largeur de la carte pour qu'elle s'adapte à l'écran */
-
-    margin-bottom: 1rem; /* Ajoute un espace entre les cartes */
-  }
-  .artworks_medium {
-    margin-top: 0px !important; /* Ajuste l'espace au-dessus des sections d'artworks */
-    font-size: 1px;
-  }
-  .artworks_medium h2 {
-    margin-top: 2rem;
     font-size: 16px;
   }
 

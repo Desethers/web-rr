@@ -1,0 +1,139 @@
+/* INDEX */
+.container1 {
+  margin-top: 30px;
+}
+
+.container1 img {
+  max-width: 100%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+/* Section d'exploration pour les expositions */
+.explore {
+  margin-top: 4.5rem;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.explore h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+.explore p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  color: grey;
+}
+
+/* Boutons d'exploration des expositions */
+.explore .bouton_more_exhibitions,
+.explore .bouton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 40px;
+  margin-top: 3rem;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 2px;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.explore .bouton_more_exhibitions:hover,
+.explore .bouton:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Section des cartes d'œuvres d'art */
+.container2 {
+  margin-top: 9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Carte individuelle pour chaque œuvre */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  flex: 1 1 300px;
+  max-width: 300px;
+  height: 450px;
+}
+
+/* Image des œuvres */
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+/* Media queries pour mobile */
+@media (max-width: 768px) {
+  /* Explore buttons */
+  .explore .bouton_more_exhibitions,
+  .explore .bouton {
+    font-size: 16px;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .explore h1 {
+    font-size: 28px;
+  }
+
+  .explore p {
+    font-size: 18px;
+  }
+
+  .explore_bouton .bouton_more_exhibitions,
+  .explore_artworks_bouton .bouton_artworks {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .container1 {
+    width: 100%;
+  }
+
+  .container1 img {
+    width: 100%;
+    margin-bottom: -2rem;
+  }
+
+  .container2 {
+    margin-top: 5rem;
+  }
+
+  .legende {
+    font-size: 16px;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 240px;
+  }
+}
