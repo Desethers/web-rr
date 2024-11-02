@@ -14,13 +14,19 @@ body {
   padding: 25px;
 }
 
-/* Navbar */
+/* =====================================
+   NAV LINKS STYLES
+   ===================================== */
 .navbar {
   padding: 0;
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  @media (max-width: 480px) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 .navbar a {
@@ -30,25 +36,46 @@ body {
 .navbar .titre {
   font-size: 28px;
   font-weight: 600;
+  @media (max-width: 480px) {
+    font-size: 24px;
+    font-weight: bold;
+  }
 }
 
-.navbar .navlinks ul {
+.navlinks {
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.navlinks ul {
   display: flex;
   gap: 0.5rem;
+  @media (max-width: 480px) {
+    justify-content: space-between;
+    margin-top: 1.5em;
+  }
 }
 
 .navbar .navlinks ul li a {
   font-size: 16px;
   font-weight: 500;
-  padding: 12px;
+  padding: 12px 15px;
   border-radius: 30px;
   display: block;
+  @media (max-width: 480px) {
+    font-size: 14px;
+    background-color: #f5f5f7;
+  }
 }
 
 .navbar .navlinks ul li a:hover {
-  /* text-decoration: underline; */
   background-color: #f5f5f7;
 }
+
+/* =====================================
+   END NAV LINKS STYLES
+   ===================================== */
 
 .navbar .menu-hamburger {
   display: none;
@@ -430,28 +457,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  body {
-    font-family: "raleway", helvetica, sans-serif;
-    padding: 20px;
-  }
-
-  /* Navbar */
-  .navbar {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .navbar .navlinks ul {
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1em;
-    font-size: 14px;
-  }
-  .navbar .titre {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
   /* Explore and artworks container */
   .explore,
   .container2 {

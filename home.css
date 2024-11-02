@@ -58,60 +58,6 @@
   align-items: stretch;
 }
 
-/* Réutilisation des styles de gallery.css */
-.gallery_card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  color: inherit;
-  background-color: #f5f5f7;
-  border-radius: 10px;
-}
-
-.gallery_img_container {
-  width: 100%;
-}
-
-.gallery_card img {
-  width: 100%;
-  height: auto;
-  filter: brightness(0.9);
-}
-
-/* Ajout des styles manquants de gallery.css */
-.legende {
-  font-size: 16px;
-  line-height: 150%;
-}
-
-.legende h3 {
-  font-size: inherit;
-  font-weight: 500;
-}
-
-.legende .medium,
-.legende .size {
-  color: gray;
-}
-
-.size {
-  display: none;
-}
-
-.gallery_card:hover .size {
-  display: block;
-}
-
-.gallery_card:hover .medium {
-  display: none;
-}
-
-.gallery_card:hover h3 {
-  text-decoration: underline;
-  transition: color 0.1s ease;
-}
-
 /* Media queries pour mobile */
 @media (max-width: 768px) {
   /* Explore buttons */
@@ -136,13 +82,5 @@
   .container2 {
     margin-top: 5rem;
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .legende {
-    font-size: 16px;
-  }
-
-  .gallery_card img {
-    max-width: 240px;
   }
 }

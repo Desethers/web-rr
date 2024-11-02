@@ -8,7 +8,7 @@
   grid-template-columns: repeat(4, 1fr);
   row-gap: 1.5rem;
   column-gap: 1.5rem;
-  justify-items: center;
+  justify-items: stretch;
   align-items: stretch;
 }
 
@@ -70,14 +70,18 @@
   text-decoration: underline;
   transition: color 0.1s ease;
 }
+/* Tablet styles (entre 769px et 1024px) */
+@media (max-width: 1024px) {
+  .paintings_container,
+  .collages-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-/* Mobile styles */
-@media (max-width: 768px) {
+/* Mobile styles (jusqu'à 768px) */
+@media (max-width: 480px) {
   .paintings_container,
   .collages-container {
     grid-template-columns: repeat(1, 1fr);
-  }
-  .gallery_card img {
-    max-width: 240px;
   }
 }
