@@ -1,0 +1,69 @@
+/* PAST EXHIBITIONS PAGE */
+.container_pastexhibitions {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 3rem;
+  column-gap: 1.5rem;
+  place-content: center space-between;
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card_exhibition {
+  display: block;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card_exhibition img {
+  width: 100%;
+  border-radius: 10px;
+  filter: brightness(0.9);
+}
+
+.legende_exhibition {
+  color: black;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.legende_exhibition h3 {
+  font-size: inherit;
+  font-weight: 500;
+}
+
+.date {
+  font-size: inherit;
+  color: gray;
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.card_exhibition:hover .date {
+  display: block;
+}
+
+.venue {
+  font-size: inherit;
+  color: gray;
+  display: block;
+}
+
+.card_exhibition:hover .venue {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.card_exhibition:hover h3 {
+  text-decoration: underline;
+  transition: color 0.1s ease;
+}
