@@ -28,7 +28,6 @@
 }
 
 .legende_exhibition {
-  color: black;
   font-size: 16px;
   line-height: 150%;
 }
@@ -52,7 +51,6 @@
 }
 
 .venue {
-  font-size: inherit;
   color: gray;
   display: block;
 }
