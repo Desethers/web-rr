@@ -18,15 +18,13 @@
 }
 
 .explore h1 {
-  font-size: 2.3rem;
-  margin-bottom: 0.6rem;
-  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .explore p {
   line-height: 1.5;
   font-size: 1.6rem;
-  color: grey;
+  color: gray;
 }
 
 .explore .bouton {

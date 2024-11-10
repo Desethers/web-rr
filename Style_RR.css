@@ -14,6 +14,14 @@ body {
   padding: 25px;
 }
 
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+
 /* =====================================
    NAV LINKS STYLES
    ===================================== */
@@ -37,8 +45,7 @@ body {
   font-size: 28px;
   font-weight: 600;
   @media (max-width: 480px) {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 22px;
   }
 }
 
@@ -179,7 +186,7 @@ body {
 
 .venue {
   font-size: inherit;
-  color: gray;
+  color: gray
   display: block;
 }
 
@@ -199,7 +206,6 @@ body {
 .title_exhibition h1 {
   margin-top: 4rem;
   margin-bottom: 1rem;
-  font-size: 48px;
 }
 
 .filet {
@@ -387,7 +393,7 @@ body {
   font-weight: 600;
 }
 .medium-item {
-  color: #aa9898;
+  color: gray;
   font-size: 16px;
   margin-top: 0.5rem;
   line-height: 1.5;
@@ -466,7 +472,6 @@ body {
   }
 
   .explore h1 {
-    font-size: 28px; /* Ajuster la taille du texte */
     margin-top: 0rem;
   }
 
@@ -496,11 +501,6 @@ body {
 
   /* EXHIBITION PAGE */
 
-  .title_exhibition h1 {
-    margin-bottom: 1rem;
-    font-size: 32px;
-  }
-
   .containerintro {
     flex-direction: column;
     align-items: center; /* Centre les colonnes horizontalement */
@@ -511,7 +511,7 @@ body {
     width: 100%; /* Chaque section occupe 100% de la largeur */
     max-width: 600px; /* Limite la largeur pour éviter que le texte s'étale trop */
     text-align: left; /* Aligne le texte à gauche */
-    padding-bottom: 1rem; /* Ajoute de l'espace sous le texte avant le filet */
+    padding-bottom: 20px; /* Ajoute de l'espace sous le texte avant le filet */
     border-bottom: 1px solid #babbba; /* Filet sous chaque section */
   }
 
