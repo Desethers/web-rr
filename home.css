@@ -45,17 +45,6 @@
   color: white;
 }
 
-/* Section des cartes d'œuvres d'art */
-.container2 {
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 1.5rem;
-  column-gap: 1.5rem;
-  justify-items: center;
-  align-items: stretch;
-}
-
 /* Media queries pour mobile */
 @media (max-width: 768px) {
   /* Explore buttons */
@@ -75,10 +64,5 @@
 
   .container1 {
     width: 100%;
-  }
-
-  .container2 {
-    margin-top: 5rem;
-    grid-template-columns: repeat(1, 1fr);
   }
 }
