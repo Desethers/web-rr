@@ -106,17 +106,6 @@ h1 {
   font-size: 18px;
 }
 
-/* Aligner cards ecran 13" */
-@media (max-width: 1300px) {
-  .container2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-  }
-}
-
 /* Bouton spécifique pour les œuvres d'art */
 .bouton_artworks {
   display: inline-flex;
@@ -464,8 +453,7 @@ h1 {
 
 @media (max-width: 768px) {
   /* Explore and artworks container */
-  .explore,
-  .container2 {
+  .explore {
     flex-direction: column;
     align-items: center;
     text-align: left;
