@@ -1,4 +1,3 @@
-/* Réinitialisation des styles de base */
 * {
   text-decoration: none;
   margin: 0;
@@ -6,20 +5,34 @@
   list-style: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 25px;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
 }
 
 h1 {
   font-size: 48px;
   font-weight: 600;
-  @media (max-width: 768px) {
-    font-size: 32px;
-  }
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 /* =====================================
@@ -175,7 +188,7 @@ h1 {
 
 .venue {
   font-size: inherit;
-  color: gray
+  color: gray;
   display: block;
 }
 
@@ -452,7 +465,14 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  /* Explore and artworks container */
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
   .explore {
     flex-direction: column;
     align-items: center;
@@ -464,7 +484,7 @@ h1 {
   }
 
   .explore p {
-    font-size: 18px; /* Ajuster la taille du texte */
+    font-size: 18px;
   }
 
   .legende {

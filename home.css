@@ -1,4 +1,7 @@
-/* INDEX */
+.hero {
+  max-width: 100%;
+}
+
 .container1 {
   margin-top: 30px;
 }
@@ -6,11 +9,12 @@
 .container1 img {
   object-fit: cover;
   max-width: 100%;
-  margin: auto;
+  width: 100%;
+  height: auto;
+  display: block;
   filter: brightness(0.9);
 }
 
-/* Section d'exploration pour les expositions */
 .explore {
   margin-top: 2rem;
   align-items: flex-start;
@@ -19,12 +23,14 @@
 
 .explore h1 {
   margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
 .explore p {
   line-height: 1.5;
   font-size: 1.6rem;
-  color: gray;
+  color: #666;
+  margin: 0.25rem 0;
 }
 
 .explore .bouton {
@@ -33,25 +39,30 @@
   align-items: center;
   margin-top: 1rem;
   padding: 15px 25px;
-  border: 1px solid black;
+  border: 1px solid #000;
   border-radius: 10px;
-  color: black;
+  color: #000;
   font-size: 18px;
   text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .explore .bouton:hover {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }
 
-/* Media queries pour mobile */
 @media (max-width: 768px) {
-  /* Explore buttons */
+  .container1 {
+    margin-top: 20px;
+  }
+
   .explore .bouton {
     font-size: 16px;
     display: block;
     text-align: center;
+    width: 100%;
   }
 
   .explore h1 {
@@ -60,9 +71,5 @@
 
   .explore p {
     font-size: 18px;
-  }
-
-  .container1 {
-    width: 100%;
   }
 }

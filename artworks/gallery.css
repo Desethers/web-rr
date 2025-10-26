@@ -1,6 +1,11 @@
-/* Gallery page specific styles */
+.textandinfos {
+  margin-top: 2rem;
+}
 
-/* Gallery cards containers */
+.filet_mobile {
+  display: none;
+}
+
 .paintings_container,
 .collages-container {
   margin-top: 2rem;
@@ -12,13 +17,16 @@
   align-items: stretch;
 }
 
-.artworks_medium h2 {
+.artworks_medium {
   margin-top: 4rem;
-  font-size: 18px;
-  font-weight: 600;
 }
 
-/* Individual gallery card */
+.artworks_medium h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
 .gallery_card {
   display: flex;
   flex-direction: column;
@@ -27,16 +35,23 @@
   color: inherit;
   background-color: #f5f5f7;
   border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.gallery_card:hover {
+  transform: translateY(-2px);
 }
 
 .gallery_img_container {
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .gallery_card img {
   width: 100%;
   height: auto;
   filter: brightness(0.9);
+  display: block;
 }
 
 .legende {
@@ -47,35 +62,27 @@
 .legende h3 {
   font-size: inherit;
   font-weight: 500;
+  margin-bottom: 0.25rem;
 }
 
 .legende .medium,
 .legende .size {
   color: gray;
+  font-size: 14px;
 }
 
 .size {
   display: none;
-  @media (max-width: 768px) {
-    display: block;
-  }
 }
 
 .gallery_card:hover .size {
   display: block;
 }
 
-.gallery_card:hover .medium {
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-
 .gallery_card:hover h3 {
   text-decoration: underline;
-  transition: color 0.1s ease;
 }
-/* Tablet styles (entre 769px et 1024px) */
+
 @media (max-width: 1024px) {
   .paintings_container,
   .collages-container {
@@ -83,10 +90,29 @@
   }
 }
 
-/* Mobile styles (jusqu'à 768px) */
+@media (max-width: 768px) {
+  .filet_mobile {
+    display: block;
+    border-top: 1px solid #babbba;
+    margin-top: 2rem;
+  }
+
+  .size {
+    display: block;
+  }
+
+  .gallery_card:hover .medium {
+    display: block;
+  }
+}
+
 @media (max-width: 480px) {
   .paintings_container,
   .collages-container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .gallery_card {
+    padding: 15px;
   }
 }
